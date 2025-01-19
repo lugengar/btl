@@ -16,25 +16,8 @@
   * {
     scrollbar-color: #5a5a5a #1a1a1a;
   }
-  @keyframes show {
-    from {
-        transform: scale(0.25) translateY(20vh);
-    }
-    to {
-        transform: scale(1) translateY(0);
-    }
-}
+ 
 
-.producto {
-    view-timeline-name: --image;
-    view-timeline-axis: block;
-    animation-timeline: --image;
-
-    animation-name: show;
-    animation-range: entry 0% cover 20%;
-    animation-fill-mode: both;
-
-}
 
 body{
     background-color: black;
@@ -408,7 +391,6 @@ background-image: url();
     "TXT" 50vh
     "TIT" auto/
     50vh ;
-
 }
 .producto h1{
     text-overflow: ellipsis;
@@ -678,6 +660,16 @@ background-repeat: no-repeat;
         right: 250vh;
     }
 }
+@keyframes show {
+    from {
+        opacity: 0%;
+        transform:  translateY(5vh);
+    }
+    to {
+        opacity: 100%;
+        transform: translateY(0);
+    }
+}
 .logoyredes{
     position: relative;
     grid-area: LOGO;
@@ -705,4 +697,13 @@ grid-area: REDE;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+.producto, .servicio{
+
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: show;
+    animation-range: entry 20% cover 20%;
+    animation-fill-mode: both;
 }
