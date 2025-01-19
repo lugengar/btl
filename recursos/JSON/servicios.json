@@ -1,18 +1,18 @@
 [
     {
-        "imagen": "recursos/JPG/a2.jpg",
+        "imagen": "https://cdn.jsdelivr.net/gh/lugengar/btl@main/recursos/JPG/a2.jpg",
         "posicionimagen": "center",
         "titulo": "SERVICIO 1",
         "texto": "1consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl"
     },
     {
-        "imagen": "recursos/JPG/a1.jpg",
+        "imagen": "https://cdn.jsdelivr.net/gh/lugengar/btl@main/recursos/JPG/a1.jpg",
         "posicionimagen": "center",
         "titulo": "SERVICIO 2",
         "texto": "2nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl"
     },
     {
-        "imagen": "recursos/WEBP/a3.webp",
+        "imagen": "https://cdn.jsdelivr.net/gh/lugengar/btl@main/recursos/WEBP/a3.webp",
         "posicionimagen": "18%",
         "titulo": "SERVICIO 3",
             "texto": "3Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl"

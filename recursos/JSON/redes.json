@@ -1,18 +1,18 @@
 [
     {
-      "image": "recursos/SVG/whats.svg",
+      "image": "https://cdn.jsdelivr.net/gh/lugengar/btl@main/recursos/SVG/whats.svg",
       "url": ""
     },
     {
-      "image": "recursos/SVG/face.svg",
+      "image": "https://cdn.jsdelivr.net/gh/lugengar/btl@main/recursos/SVG/face.svg",
       "url": ""
     },
     {
-      "image": "recursos/SVG/insta.svg",
+      "image": "https://cdn.jsdelivr.net/gh/lugengar/btl@main/recursos/SVG/insta.svg",
       "url": ""
     },
     {
-      "image": "recursos/SVG/link.svg",
+      "image": "https://cdn.jsdelivr.net/gh/lugengar/btl@main/recursos/SVG/link.svg",
       "url": ""
     }
                 

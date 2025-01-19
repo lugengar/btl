@@ -1,4 +1,4 @@
-fetch('recursos/JSON/productos.json')
+fetch('https://cdn.jsdelivr.net/gh/lugengar/btl@main/https://cdn.jsdelivr.net/gh/lugengar/btl@main/recursos/JSON/productos.json')
     .then(response => response.json())
     .then(data => {
         renderConfiguracion(data.configuracion);

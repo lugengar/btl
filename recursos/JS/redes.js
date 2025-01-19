@@ -1,4 +1,4 @@
-fetch('recursos/JSON/redes.json') 
+fetch('https://cdn.jsdelivr.net/gh/lugengar/btl@main/recursos/JSON/redes.json') 
     .then(response => response.json())
     .then(data => {
         const listaredes = document.querySelector('.listaredes');

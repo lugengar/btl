@@ -163,7 +163,7 @@ button, a{
 .imagen{
     pointer-events: none;
     position: absolute;
-    background-image: url(recursos/img/a1.jpg);
+    background-image: url(https://cdn.jsdelivr.net/gh/lugengar/btl@main/https://cdn.jsdelivr.net/gh/lugengar/btl@main/recursos/img/a1.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

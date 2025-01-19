@@ -1,4 +1,4 @@
-fetch('recursos/JSON/servicios.json') 
+fetch('https://cdn.jsdelivr.net/gh/lugengar/btl@main/https://cdn.jsdelivr.net/gh/lugengar/btl@main/recursos/JSON/servicios.json') 
 
     .then(response => response.json())
     .then(data => {

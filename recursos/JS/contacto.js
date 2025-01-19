@@ -1,6 +1,6 @@
 function fetchData() {
   
-  fetch('recursos/JSON/contactos.json')
+  fetch('https://cdn.jsdelivr.net/gh/lugengar/btl@main/https://cdn.jsdelivr.net/gh/lugengar/btl@main/recursos/JSON/contactos.json')
     .then(response => response.json())
     .then(data => {
       generateHTML(data);
