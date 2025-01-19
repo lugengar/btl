@@ -1,4 +1,6 @@
-
+body{
+    background-color: black;
+}
 p {
     font-family: "Roboto", serif;
     font-weight: 300;
