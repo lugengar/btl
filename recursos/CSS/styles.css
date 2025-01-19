@@ -323,7 +323,8 @@ background-image: url();
     background-attachment: fixed;
 }
 #servicios{
-    min-height: 90vh;
+    position: relative;
+    min-height: 100vh;
     overflow: hidden;
     background-size: 180vh;
     background-position: -15vh -15vh;
@@ -660,16 +661,7 @@ background-repeat: no-repeat;
         right: 250vh;
     }
 }
-@keyframes show {
-    from {
-        opacity: 0%;
-        transform:  translateY(5vh);
-    }
-    to {
-        opacity: 100%;
-        transform: translateY(0);
-    }
-}
+
 .logoyredes{
     position: relative;
     grid-area: LOGO;
@@ -697,6 +689,17 @@ grid-area: REDE;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+@keyframes show {
+    from {
+        opacity: 0%;
+        transform:  translateY(5vh);
+    }
+    to {
+        opacity: 100%;
+        transform: translateY(0);
+    }
 }
 .producto, .servicio{
 

@@ -44,7 +44,7 @@ function renderProductos(productos) {
         listaProductos.appendChild(item);
     });
 }
-
+/*
 const containers = document.querySelectorAll('.listaproductos, .listaservicios');
 containers.forEach(container => {
 
@@ -85,3 +85,4 @@ containers.forEach(container => {
     container.addEventListener("mouseenter", stopAutoScroll);
     container.addEventListener("mouseleave", startAutoScroll2);
 });
+*/
