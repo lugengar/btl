@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Chillax&display=swap" rel="stylesheet">
     <style>
@@ -80,7 +80,22 @@
         <section id="video">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/V9PVRfjEBTI?si=WeEjIBKZJdl5-07_&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
-        <section id="contacto"  style="background-image: url(recursos/JPG/a1.jpg);" ></section>
+        <form id="contacto"  style="background-image: url(recursos/JPG/a1.jpg);" >
+            <div class="minitexto">CONTACTO</div>
+            <h1 class="titulo">FORMULARIO DE CONTACTO</h1>
+            <div class="inputs">
+                <input type="search" name="" id="" required placeholder="NOMBRE">
+                <input type="search" name="" id="" required placeholder="EMPRESA">
+                <input type="email" name="" id="" required placeholder="CORREO"> 
+                <select name="" id="" required >
+                    <option value="">ASUNTO</option>
+                </select>
+                <textarea name="" id="" placeholder="MENSAJE"></textarea>
+                <div class="g-recaptcha" data-sitekey="TU_CLAVE_DE_SITIO" data-theme="dark" ></div>
+            </div>
+            <button class="botonegro" type="submit">ENVIAR CONSULTA</button>
+        </form>
+        <section id="marcadeagua">© 2025 BEYOND THE LIMIT. DESARROLLADO POR &nbsp;<a href="">LUCIANO BARBINI</a></section>
         <footer id="footer" class="fondonegro"  style="background-image: url(recursos/SVG/forma3.svg);" ></footer>
     </main>
 </body>
@@ -90,3 +105,4 @@
 <script src="recursos/JS/marcas.js"></script>
 <script src="recursos/JS/servicios.js"></script>
 <script src="recursos/JS/productos.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>

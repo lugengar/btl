@@ -122,4 +122,23 @@
          auto  ;
         transform: translateX(110%);
     }
+
+    #contacto{
+        min-height: 110vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: black;
+        grid-area: CON;
+        display: grid;
+        grid-template: 
+        ". .  ."auto
+        ". MIN  ." max-content
+        ". TIT  ." max-content
+        ". FORM  . " max-content
+     
+        ". BOT  . " auto 
+        ". . .  " auto /
+        auto 90% auto ;
+    }
 }

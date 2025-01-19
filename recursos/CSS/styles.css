@@ -22,6 +22,8 @@ body{
     background-color: black;
 }
 p {
+    grid-area: TXT;
+
     word-wrap: break-word;
     overflow-wrap: break-word;
     margin: 0;
@@ -32,6 +34,7 @@ p {
     color: white;
 }
 h1 {
+    grid-area: TIT;
     word-wrap: break-word;
     overflow-wrap: break-word;
     margin: 0;
@@ -57,6 +60,28 @@ h1 {
     justify-content: baseline;
     color: white;
 }
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { color: white; }  
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: white; }
+input::-moz-placeholder, textarea::-moz-placeholder { color: white; } 
+input, textarea, option, select{
+    padding: 0;
+    margin: 0;
+    resize: none;
+    border: 0.05vh white solid;
+    background-color: black;
+    font-family: "Chillax";
+    font-weight: 500;
+    font-size: 2.5vh;
+    grid-area: MIN;
+    display: flex;
+    justify-content: baseline;
+    color: white;
+}
+input[type="search"]::-webkit-search-cancel-button {
+    filter: grayscale(100%) brightness(1000%);
+}
+
+
 #rayas{
     display: none;
 }
@@ -168,7 +193,6 @@ button, a{
 }
 .textos p {
     font-size: 3vh;
-    grid-area: TXT;
     margin: 0;
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
     opacity: 0%;
@@ -176,7 +200,6 @@ button, a{
    
 }
 .textos h1{
-    grid-area: TIT;
     margin: 0;
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
     opacity: 0%;
@@ -237,7 +260,8 @@ button, a{
     "PRS  " max-content
     "VID  " max-content
     "CON  " max-content
-    "FOO  " max-content/
+    "FOO  " max-content
+    "AGUA  " max-content/
     auto  ;
 }
 
@@ -308,9 +332,7 @@ background-image: url();
     ". . . " auto /
     auto 80vh auto ;
 }
-#servicios h1{
-    grid-area: TIT;
-}
+
 .listaservicios{
     gap: 3vh;
     overflow-x: auto;
@@ -425,7 +447,6 @@ background-image: url();
 .servicio h1{
     padding: 1vh;
     z-index: 2;
-    grid-area: TIT;
 }
 .servicio .blur{
     position: absolute;
@@ -442,7 +463,6 @@ background-image: url();
     padding: 1vh;
     opacity: 0%;
     transition: opacity 0.2s ease-in-out;
-    grid-area: TXT;
 
 }
 #producto{
@@ -464,11 +484,8 @@ background-image: url();
     ". . . " auto /
     auto 70vh 5vw  ;
 }
-#producto h1{
-    grid-area: TIT;
-}
+
 #producto p{
-    grid-area: TXT;
     padding: 1vh;
     border: 0.05vh solid white;
 }
@@ -487,9 +504,7 @@ background-image: url();
     ". . . " auto /
     auto 80vh auto ;
 }
-#productos h1{
-    grid-area: TIT;
-}
+
 
 #video{
     min-height: 90vh;
@@ -499,12 +514,49 @@ background-image: url();
 }
 
 #contacto{
-    min-height: 90vh;
+    min-height: 100vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-color: black;
     grid-area: CON;
+    display: grid;
+    grid-template: 
+    ". .  ."auto
+    ". MIN  ." max-content
+    ". TIT  ." max-content
+    ". FORM  . " max-content
+ 
+    ". BOT  . " auto 
+    ". . .  " auto /
+    auto 80vh auto ;
+}
+.inputs{
+ grid-area: FORM;
+ position: relative;
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: center;
+}
+.inputs input,.inputs  select,.inputs  option{
+    margin-bottom: 1vh;
+    width: 100%;
+    padding: 1vh;
+    height: auto;
+}
+.inputs  textarea{
+    margin-bottom: 1vh;
+    padding: 1vh;
+    width: 100%;
+    height: 30vh;
+}  
+.g-recaptcha {
+    transform: scale(0.8); 
+    grid-area: CAPT;
+    max-width: 80vh;
+    max-height: 50vh;
+    overflow: hidden;
 }
 #marcas{
     overflow: hidden;
@@ -521,6 +573,24 @@ background-image: url();
     background-size: 200vh;
     background-position: 50% 40vh;
     grid-area: FOO;
+    display: grid;
+    padding: 2vh;
+    grid-template: 
+    "LOGO INFO"5vh
+    "RED INFO"auto
+
+    ;
+}
+#marcadeagua{
+    min-height: 5vh;
+    grid-area: AGUA;
+    background-color: black;
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .marca{
    background-position: center;
