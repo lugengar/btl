@@ -62,10 +62,10 @@
            <div class="listaservicios">
            
            </div> 
-           <button class="botonegro" onclick="consultar('contacto')">CONSULTAR PRECIOS</button>
+           <button class="botonegro" onclick="consultar('precio')">CONSULTAR PRECIOS</button>
         </section>
         <section id="producto" style="background-image: url(recursos/WEBP/a3.webp);">
-            <button class="botonegro" onclick="consultar('productos')">VER PRODUCTOS</button>
+            <button class="botonegro" onclick="redirigir('productos')">VER PRODUCTOS</button>
 
         </section>
         <section id="marcas"></section>
@@ -75,7 +75,7 @@
             <div class="listaproductos">
            
             </div> 
-            <button class="botonegro" onclick="consultar('contacto')">CONSULTAR PRECIOS</button>
+            <button class="botonegro" onclick="consultar('precio')">CONSULTAR PRECIOS</button>
         </section>
         <section id="video">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/V9PVRfjEBTI?si=WeEjIBKZJdl5-07_&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -87,8 +87,9 @@
                 <input type="search" name="" id="" required placeholder="NOMBRE">
                 <input type="search" name="" id="" required placeholder="EMPRESA">
                 <input type="email" name="" id="" required placeholder="CORREO"> 
-                <select name="" id="" required >
+                <select name="" id="asunto" required >
                     <option value="">ASUNTO</option>
+                    <option value="precio">Consultar precio</option>
                 </select>
                 <textarea name="" id="" placeholder="MENSAJE"></textarea>
                 <div class="g-recaptcha" data-sitekey="TU_CLAVE_DE_SITIO" data-theme="dark" ></div>

@@ -44,12 +44,10 @@ function redirigir(href){
         sidebar.style.transform = "translateX(110%)"
     }
 }
-function consultar(href){
-    var sidebar = document.getElementById('sidebar');
-    document.querySelector("#"+href).scrollIntoView({ behavior: 'smooth' });
-    if(bar == true){
-        bar = !bar
-        sidebar.style.transform = "translateX(110%)"
-    }
+function consultar(consulta){
+    var asunto = document.getElementById('asunto');
+    asunto.value = consulta
+    document.querySelector("#contacto").scrollIntoView({ behavior: 'smooth' });
+    
 }
 
