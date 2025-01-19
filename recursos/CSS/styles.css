@@ -1,17 +1,49 @@
+
+
+
+  ::-webkit-scrollbar-track {
+    background: #1a1a1a;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #5a5a5a;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #777;
+  }
+  
+  * {
+    scrollbar-color: #5a5a5a #1a1a1a;
+  }
+  
+  
 body{
     background-color: black;
 }
 p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin: 0;
+    padding: 0;
     font-family: "Roboto", serif;
     font-weight: 300;
 
     color: white;
 }
 h1 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin: 0;
+    padding: 0;
     font-family: "Roboto", serif;
     font-weight: 900;
     font-size: 6vh;
     color: white;
+    
+}
+.subtitulo{
+    font-size: 4vh;
 }
 .minitexto{
     font-family: "Chillax";
@@ -200,6 +232,7 @@ button, a{
     "PRO  " max-content
     "MAR  " max-content
     "PRS  " max-content
+    "VID  " max-content
     "CON  " max-content
     "FOO  " max-content/
     auto  ;
@@ -229,8 +262,8 @@ button, a{
 }
 .hidden{
     background-color: transparent;
-    -webkit-backdrop-filter: blur(15px);
-    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(5vh);
+    backdrop-filter: blur(5vh);
 }
 .visible{
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.397), transparent); ;
@@ -259,10 +292,97 @@ background-image: url();
 }
 #servicios{
     min-height: 90vh;
-
+    overflow: hidden;
     background-size: 180vh;
     background-position: -15vh -15vh;
     grid-area: SER;
+    display: grid;
+    grid-template: 
+    ". . ."auto
+    ". MIN ." max-content
+    ". TIT ." max-content
+    ". SERV SERV " 65vh
+    ". BOT . " auto 
+    ". . . " auto /
+    10vw 80vh auto ;
+}
+#servicios h1{
+    grid-area: TIT;
+}
+.listaservicios{
+    gap: 3vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    grid-area: SERV;
+    display: flex;
+    position: relative;
+}
+.servicio{
+    cursor: default;
+    transition: background-size 0.3s ease;
+    position: relative;
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    display: grid;
+    width: 50vh;
+    height: 60vh;
+    background-color: rgba(255, 255, 255, 0.116);
+    grid-template: 
+    "TIT" max-content
+    "TXT" auto/
+    45vh ;
+
+}
+.botonegro{
+    background-color: black;
+    border: 0.05vh solid white;
+    grid-area: BOT;
+    width: max-content;
+    padding: 1vh;
+    height: max-content;
+    font-family: "Chillax";
+    font-weight: 400;
+    font-size: 2vh;
+    display: flex;
+    justify-content: baseline;
+    color: white;
+}
+.servicio:hover {
+    background-size: auto 110%;
+}
+.servicio:hover p{
+    opacity: 100%;
+}
+
+.servicio:hover .blur{
+    backdrop-filter: blur(0.5vh);
+    -webkit-backdrop-filter: blur(0.5vh);
+}
+.servicio h1{
+    padding: 1vh;
+    z-index: 2;
+    grid-area: TIT;
+}
+.servicio .blur{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    z-index: 1;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.397), transparent); 
+
+}
+.servicio p{
+    z-index: 2;
+    padding: 1vh;
+    opacity: 0%;
+    transition: opacity 0.2s ease-in-out;
+    grid-area: TXT;
+
 }
 #producto{
     min-height: 90vh;
@@ -278,6 +398,13 @@ background-image: url();
     background-position: -15vh -15vh;
     grid-area: PRS;
 }
+#video{
+    min-height: 90vh;
+
+    background-color: black;
+    grid-area: VID;
+}
+
 #contacto{
     min-height: 90vh;
 
