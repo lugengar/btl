@@ -1,4 +1,4 @@
-fetch('https://cdn.jsdelivr.net/gh/lugengar/btl@main/https://cdn.jsdelivr.net/gh/lugengar/btl@main/recursos/JSON/carrusel.json')
+fetch('recursos/JSON/carrusel.json')
 .then(respuesta => respuesta.json())
 .then(datos => {
     let intervalo;

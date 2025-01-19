@@ -1,11 +1,11 @@
 [
     {
-      "image": "https://cdn.jsdelivr.net/gh/lugengar/btl@main/recursos/SVG/carta.svg",
+      "image": "recursos/SVG/carta.svg",
       "url": "a@gmail.com",
       "tipo": "atencion"
     },
     {
-        "image": "https://cdn.jsdelivr.net/gh/lugengar/btl@main/recursos/SVG/telefono.svg",
+        "image": "recursos/SVG/telefono.svg",
         "url": "11 5389854",
         "tipo": "ubicacion"
       }

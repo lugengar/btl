@@ -1,4 +1,4 @@
-fetch('https://cdn.jsdelivr.net/gh/lugengar/btl@main/https://cdn.jsdelivr.net/gh/lugengar/btl@main/recursos/JSON/marcas.json')
+fetch('recursos/JSON/marcas.json')
     .then(response => response.json())
     .then(marcasData => {
         const marcasContainer = document.getElementById("marcas");

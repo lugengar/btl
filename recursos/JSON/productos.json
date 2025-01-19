@@ -1,25 +1,25 @@
 {
     "configuracion": 
     {
-        "imagenprincipal": "https://cdn.jsdelivr.net/gh/lugengar/btl@main/recursos/WEBP/a3.webp",
+        "imagenprincipal": "recursos/WEBP/a3.webp",
         "titulo": "TODO PARA TU NEGOCIO",
         "texto": "1consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl"
     },
     "imagenes": [
         {
-            "imagen": "https://cdn.jsdelivr.net/gh/lugengar/btl@main/recursos/JPG/a2.jpg",
+            "imagen": "recursos/JPG/a2.jpg",
             "posicionimagen": "center",
             "titulo": "PRODUCTO 1",
             "texto": "1consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl"
         },
         {
-            "imagen": "https://cdn.jsdelivr.net/gh/lugengar/btl@main/recursos/JPG/a1.jpg",
+            "imagen": "recursos/JPG/a1.jpg",
             "posicionimagen": "center",
             "titulo": "PRODUCTO 2",
             "texto": "2nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl"
         },
         {
-            "imagen": "https://cdn.jsdelivr.net/gh/lugengar/btl@main/recursos/WEBP/a3.webp",
+            "imagen": "recursos/WEBP/a3.webp",
             "posicionimagen": "18%",
             "titulo": "PRODUCTO 3",
                 "texto": "3Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl"

@@ -1,34 +1,34 @@
 [
     {
-        "image": "https://cdn.jsdelivr.net/gh/lugengar/btl@main/recursos/SVG/starlink.svg",
+        "image": "recursos/SVG/starlink.svg",
         "tamañoespecial": ""
       },
       {
-        "image": "https://cdn.jsdelivr.net/gh/lugengar/btl@main/recursos/SVG/aruba.svg",
+        "image": "recursos/SVG/aruba.svg",
         "tamañoespecial": ""
       },
       {
-        "image": "https://cdn.jsdelivr.net/gh/lugengar/btl@main/recursos/SVG/mikrotik.svg",
+        "image": "recursos/SVG/mikrotik.svg",
         "tamañoespecial": "30vh"
       },
       {
-        "image": "https://cdn.jsdelivr.net/gh/lugengar/btl@main/recursos/SVG/cisco.svg",
+        "image": "recursos/SVG/cisco.svg",
         "tamaño": ""
       },
       {
-        "image": "https://cdn.jsdelivr.net/gh/lugengar/btl@main/recursos/SVG/starlink.svg",
+        "image": "recursos/SVG/starlink.svg",
         "tamañoespecial": ""
       },
       {
-        "image": "https://cdn.jsdelivr.net/gh/lugengar/btl@main/recursos/SVG/aruba.svg",
+        "image": "recursos/SVG/aruba.svg",
         "tamañoespecial": ""
       },
       {
-        "image": "https://cdn.jsdelivr.net/gh/lugengar/btl@main/recursos/SVG/mikrotik.svg",
+        "image": "recursos/SVG/mikrotik.svg",
         "tamañoespecial": "30vh"
       },
       {
-        "image": "https://cdn.jsdelivr.net/gh/lugengar/btl@main/recursos/SVG/cisco.svg",
+        "image": "recursos/SVG/cisco.svg",
         "tamaño": ""
       }
                 
