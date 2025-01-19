@@ -316,6 +316,19 @@ background-image: url();
     position: relative;
     grid-area: CAR;
 }
+.whats{
+    width: 10vh;
+    height: 10vh;
+    background-color: #25D366;
+    border-radius: 50vh;
+    background-position: center;
+    background-size: 6vh;
+    background-repeat: no-repeat;
+    position: fixed;
+    right: 4vh;
+    bottom: 4vh;
+    z-index: 100;
+}
 .fondonegro{
     position: relative;
     background-color: black;
