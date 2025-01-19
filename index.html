@@ -6,7 +6,7 @@
    
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Chillax&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="recursos/FONT/Chillax/css/chillax.css">
+    <link rel="stylesheet" href="recursos/CSS/chillax.css">
     <link rel="stylesheet" href="recursos/CSS/styles.css">
     <link rel="stylesheet" href="recursos/CSS/responsive.css">
 </head>
@@ -16,9 +16,9 @@
         <header id="header" class="visible">
             <div class="logo" style="background-image: url(recursos/SVG/logo.svg);"></div>
             <div class="links" id="links">
-                <a onclick="redirigir('carrusel')" class="link" id="nosotros">NOSOTROS</a>
-                <a onclick="redirigir('servicios')" class="link">SERVICIOS</a>
-                <a onclick="redirigir('productos')" class="link">PRODUCTOS</a>
+                <button onclick="redirigir('carrusel')" class="link" id="nosotros">NOSOTROS</button>
+                <button onclick="redirigir('servicios')" class="link">SERVICIOS</button>
+                <button onclick="redirigir('productos')" class="link">PRODUCTOS</button>
                 <button onclick="redirigir('contacto')" class="link">CONTACTO</button>
                 <button onclick="sidebar()" id="rayas">&#9776;</button>
 
@@ -26,9 +26,9 @@
         </header>
         <nav id="sidebar">
             <div class="links">
-                <a onclick="redirigir('carrusel')" class="link">NOSOTROS</a>
-                <a onclick="redirigir('servicios')" class="link">SERVICIOS</a>
-                <a onclick="redirigir('productos')" class="link">PRODUCTOS</a>
+                <button onclick="redirigir('carrusel')" class="link">NOSOTROS</button>
+                <button onclick="redirigir('servicios')" class="link">SERVICIOS</button>
+                <button onclick="redirigir('productos')" class="link">PRODUCTOS</button>
                 <button onclick="redirigir('contacto')" class="link">CONTACTO</button>
             </div>
         </nav>
@@ -46,14 +46,18 @@
             <div class="minitexto">NOSOTROS</div>
         </div>
         </section>
-        <section id="servicios"></section>
+        <section id="servicios" class="fondonegro" style="background-image: url(recursos/SVG/forma1.svg);"></section>
         <section id="producto"></section>
-        <section id="marcas"></section>
-        <section id="productos"></section>
+        <section id="marcas">
+           
+
+        </section>
+        <section id="productos" class="fondonegro" style="background-image: url(recursos/SVG/forma2.svg);" ></section>
         <section id="contacto"></section>
-        <footer id="footer"></footer>
+        <footer id="footer" class="fondonegro"  style="background-image: url(recursos/SVG/forma3.svg);" ></footer>
     </main>
 </body>
 </html>
 <script src="recursos/JS/carrusel.js"></script>
 <script src="recursos/JS/header.js"></script>
+<script src="recursos/JS/marcas.js"></script>

@@ -45,7 +45,6 @@ h1 {
     background-size: contain;
 }
 #nosotros{
-    transition: opacity 0.2s ease-in-out;
     opacity: 0%;
     pointer-events: none;
 }
@@ -83,6 +82,15 @@ h1 {
 }
 button, a{
     cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+#links .link{
+    transition:  opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+
+}
+ #links .link:hover{
+    transform: scale(1.1);
 }
 .imagen{
     pointer-events: none;
@@ -122,6 +130,7 @@ button, a{
     10vw 80vh 15% auto;
 }
 .textos p {
+    font-size: 3vh;
     grid-area: TXT;
     margin: 0;
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
@@ -193,9 +202,7 @@ button, a{
     "FOO  " max-content/
     auto  ;
 }
-#main section{
-    min-height: 90vh;
-}
+
 #footer{
     min-height: 50vh;
 }
@@ -232,6 +239,8 @@ grid-area: LOGO;
 background-image: url();
 }
 #carrusel{
+    min-height: 90vh;
+
     overflow: hidden;
     max-height: 90vh ;
     display: flex;
@@ -241,33 +250,71 @@ background-image: url();
     background-color: red;
     grid-area: CAR;
 }
-#servicios{
+.fondonegro{
     position: relative;
-    background-color: green;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#servicios{
+    min-height: 90vh;
+
+    background-size: 180vh;
+    background-position: -15vh -15vh;
     grid-area: SER;
 }
 #producto{
+    min-height: 90vh;
+
     position: relative;
-    background-color: yellow;
+    background-color: black;
     grid-area: PRO;
 }
 #productos{
-    position: relative;
-    background-color: black;
+    min-height: 90vh;
+
+    background-size: 190vh;
+    background-position: -15vh -15vh;
     grid-area: PRS;
 }
 #contacto{
-    position: relative;
-    background-color: white;
+    min-height: 90vh;
+
+    background-color: black;
     grid-area: CON;
 }
 #marcas{
+    overflow: hidden;
+    max-height: 25vh;
+    min-height: 25vh;
+    background-color: black;
+    border: 0.05vh white solid;
     position: relative;
-    background-color: pink;
     grid-area: MAR;
+    min-height: 20vh;
+   
+    padding-left: 5vh;
 }
 #footer{
-    position: relative;
-    background-color: red;
+    background-size: 200vh;
+    background-position: 50% 40vh;
     grid-area: FOO;
+}
+.marca{
+   background-position: center;
+   background-size: contain;
+   background-repeat: no-repeat;
+   position: absolute;
+   right: -30vh;
+    min-width: 30vh;
+    height: 100%;
+}
+
+@keyframes animarca {
+    0%{
+        right: -30vh;
+    }
+    100%{
+        right: 250vh;
+    }
 }
