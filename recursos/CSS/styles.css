@@ -249,7 +249,6 @@ background-image: url();
     flex-wrap: wrap;
     align-items: center;
     position: relative;
-    background-color: red;
     grid-area: CAR;
 }
 .fondonegro{
