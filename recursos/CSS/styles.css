@@ -471,7 +471,7 @@ background-image: url();
 
 }
 #producto{
-    min-height: 90vh;
+    min-height: 80vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
