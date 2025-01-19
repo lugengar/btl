@@ -119,7 +119,7 @@ button, a{
     ". TIT . ."max-content
     ". TXT TXT ." max-content
     ". . . ."auto/
-    20vh 80vh 15% auto;
+    10vw 80vh 15% auto;
 }
 .textos p {
     grid-area: TXT;
