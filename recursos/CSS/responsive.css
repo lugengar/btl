@@ -41,7 +41,9 @@
         padding: 2vh;
         width: 100%;
     }
-   
+    #nosotros{
+        display: none;
+    }
     #sidebar{
         transition: transform 0.5s ease-in-out;
         z-index: 99;

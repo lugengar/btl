@@ -15,8 +15,9 @@
         <header id="header" class="visible">
             <div class="logo" style="background-image: url(recursos/SVG/logo.svg);"></div>
             <div class="links" id="links">
-                <a href="#servicios" class="link">SERVICIOS</a>
-                <a href="#productos" class="link">PRODUCTOS</a>
+                <a onclick="redirigir('carrusel')" class="link" id="nosotros">NOSOTROS</a>
+                <a onclick="redirigir('servicios')" class="link">SERVICIOS</a>
+                <a onclick="redirigir('productos')" class="link">PRODUCTOS</a>
                 <button onclick="redirigir('contacto')" class="link">CONTACTO</button>
                 <button onclick="sidebar()" id="rayas">&#9776;</button>
 
@@ -24,9 +25,10 @@
         </header>
         <nav id="sidebar">
             <div class="links">
-                <a href="#servicios" class="link">SERVICIOS</a>
-                <a href="#productos" class="link">PRODUCTOS</a>
-                <a href="#contacto" class="link">CONTACTO</a>
+                <a onclick="redirigir('carrusel')" class="link">NOSOTROS</a>
+                <a onclick="redirigir('servicios')" class="link">SERVICIOS</a>
+                <a onclick="redirigir('productos')" class="link">PRODUCTOS</a>
+                <button onclick="redirigir('contacto')" class="link">CONTACTO</button>
             </div>
         </nav>
         <section id="carrusel">
