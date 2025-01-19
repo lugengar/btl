@@ -74,6 +74,33 @@
         padding-left: 2vh;
         padding-right: 2vh;
     }
+    .informacion{
+        grid-area: INFO;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 2vh;
+    
+    }
+    .cuadro{
+        width: 95%;
+    }
+    #footer{
+    gap: 2vh;
+
+        height: max-content;
+        background-size: 200vh;
+        background-position: 50% 40vh;
+        grid-area: FOO;
+        display: grid;
+        padding: 2vh;
+        grid-template: 
+        "LOGO " auto
+        "INFO" auto/
+        auto ;
+    }
     #rayas{
         background-color: transparent;
         border: none;

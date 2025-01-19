@@ -21,7 +21,7 @@
 body{
     background-color: black;
 }
-p {
+p,a{
     grid-area: TXT;
 
     word-wrap: break-word;
@@ -32,6 +32,11 @@ p {
     font-weight: 300;
 
     color: white;
+}
+a {
+   
+    color: rgb(123, 36, 223);
+
 }
 h1 {
     grid-area: TIT;
@@ -575,11 +580,12 @@ background-image: url();
     grid-area: FOO;
     display: grid;
     padding: 2vh;
+    gap: 2vh;
     grid-template: 
-    "LOGO INFO"5vh
-    "RED INFO"auto
-
-    ;
+    "LOGO ." auto
+    "INFO INFO" auto/
+    max-content auto;
+    
 }
 #marcadeagua{
     min-height: 5vh;
@@ -591,6 +597,50 @@ background-image: url();
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.informacion{
+    grid-area: INFO;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+
+}
+.cuadro {
+    position: relative;
+    padding-top: 5vh;
+    background-color: black;
+    border: 0.005vh white solid;
+    width: 40vh;
+    min-height: 30vh;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+.cuadro .minititulo{
+    position: absolute;
+    top: 1vh;
+    left: 5%;
+    width: 90%;
+    height: 10vh;
+}
+.correo{
+width: 100%;
+height: 5vh;
+display: flex;
+align-items: center;
+padding-left: 6.5vh;
+background-position: 2vh;
+background-size: 4vh;
+background-repeat: no-repeat;
+}
+.cuadro a{
+ color: white
 }
 .marca{
    background-position: center;
@@ -609,4 +659,32 @@ background-image: url();
     100%{
         right: 250vh;
     }
+}
+.logoyredes{
+    position: relative;
+    grid-area: LOGO;
+    display: grid;
+    width: 15vh;
+    height: max-content;
+    grid-template:
+    "." 7vh
+    "REDE " max-content/
+    15vh ;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.listaredes{
+grid-area: REDE;
+ display: flex;
+ position: relative;
+ flex-wrap: wrap;
+ gap: 1vh;
+}
+.red{
+    width: 3vh;
+    height: 3vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
