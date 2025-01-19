@@ -7,20 +7,20 @@
         {
             "imagen": "recursos/JPG/a2.jpg",
             "posicionimagen": "center",
-            "titulo": "BEYOND THE LIMIT 1",
-            "texto": "1consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl"
+            "titulo": "¿POR QUÉ BTL?",
+            "texto": "BTL Solutions ofrece un servicio integral con redes a medida, alquiler de equipos, administración de servidores y backups en la nube, además de instalación de cámaras y servicio de guardia, asegurando seguridad y continuidad para tu empresa."
         },
         {
             "imagen": "recursos/JPG/a1.jpg",
             "posicionimagen": "center",
-            "titulo": "BEYOND THE LIMIT 2",
-            "texto": "2nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl"
+            "titulo": "STARLINK",
+            "texto": "Starlink, junto con routers Mikrotik y puntos de acceso Aruba, ofrece una conexión rápida, confiable y de alto rendimiento, ideal para áreas remotas. Esta combinación garantiza una red estable y productiva para tu negocio. Solicita cotización en nuestra página."
         },
         {
             "imagen": "recursos/WEBP/a3.webp",
             "posicionimagen": "18%",
-            "titulo": "BEYOND THE LIMIT 3",
-                "texto": "3Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl"
+            "titulo": "SOPORTE",
+                "texto": "BTL Solutions ofrece soporte personalizado con asistencia remota rápida y eficiente, servicio de guardia 24/7, y visitas programadas para optimizar la red y prevenir fallos, incluyendo resolución de incidencias nivel 1 en sitio."
         }
     ]
 }
