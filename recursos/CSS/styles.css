@@ -45,6 +45,9 @@ h1 {
 .subtitulo{
     font-size: 4vh;
 }
+.minititulo{
+    font-size: 3vh;
+}
 .minitexto{
     font-family: "Chillax";
     font-weight: 500;
@@ -275,7 +278,6 @@ background-image: url();
 }
 #carrusel{
     min-height: 90vh;
-
     overflow: hidden;
     max-height: 90vh ;
     display: flex;
@@ -301,15 +303,25 @@ background-image: url();
     ". . ."auto
     ". MIN ." max-content
     ". TIT ." max-content
-    ". SERV SERV " 65vh
+    ". SERV SERV " 60vh
     ". BOT . " auto 
     ". . . " auto /
-    10vw 80vh auto ;
+    auto 80vh auto ;
 }
 #servicios h1{
     grid-area: TIT;
 }
 .listaservicios{
+    gap: 3vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    grid-area: SERV;
+    display: flex;
+    position: relative;
+}
+.listaproductos{
     gap: 3vh;
     overflow-x: auto;
     overflow-y: hidden;
@@ -335,6 +347,55 @@ background-image: url();
     "TXT" auto/
     45vh ;
 
+}
+.producto{
+    cursor: default;
+    transition: background-size 0.3s ease;
+    position: relative;
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    display: grid;
+    width: 50vh;
+    height: 50vh;
+    background-color: rgba(255, 255, 255, 0.116);
+    grid-template: 
+    "TXT" 50vh
+    "TIT" auto/
+    50vh ;
+
+}
+.producto h1{
+    text-overflow: ellipsis;
+    background-color: black;
+    border: 0.05vh solid white;
+    padding: 1vh;
+}
+.producto p{
+    padding: 1vh;
+    opacity: 0%;
+    transition: opacity 0.2s ease-in-out;
+    z-index: 2;
+
+}
+.producto:hover {
+    background-size: auto 110%;
+}
+.producto:hover p{
+    opacity: 100%;
+}
+.producto .blur{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    z-index: 1;
+
+}
+.producto:hover .blur{
+    backdrop-filter: blur(0.5vh);
+    -webkit-backdrop-filter: blur(0.5vh);
 }
 .botonegro{
     background-color: black;
@@ -386,18 +447,50 @@ background-image: url();
 }
 #producto{
     min-height: 90vh;
-
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
     background-color: black;
     grid-area: PRO;
+    display: grid;
+    grid-template: 
+    ". . ."auto
+    ". MIN ." max-content
+    ". TIT ." max-content
+    ". TXT . " max-content
+    ". . . " 1vh
+    ". BOT . " auto 
+    ". . . " auto /
+    auto 70vh 5vw  ;
+}
+#producto h1{
+    grid-area: TIT;
+}
+#producto p{
+    grid-area: TXT;
+    padding: 1vh;
+    border: 0.05vh solid white;
 }
 #productos{
     min-height: 90vh;
-
     background-size: 190vh;
     background-position: -15vh -15vh;
     grid-area: PRS;
+    display: grid;
+    grid-template: 
+    ". . ."auto
+    ". MIN ." max-content
+    ". TIT ." max-content
+    ". SERV SERV " 60vh
+    ". BOT . " auto 
+    ". . . " auto /
+    auto 80vh auto ;
 }
+#productos h1{
+    grid-area: TIT;
+}
+
 #video{
     min-height: 90vh;
 
@@ -416,7 +509,6 @@ background-image: url();
     max-height: 25vh;
     min-height: 25vh;
     background-color: black;
-    border: 0.05vh white solid;
     position: relative;
     grid-area: MAR;
     min-height: 20vh;
@@ -430,7 +522,7 @@ background-image: url();
 }
 .marca{
    background-position: center;
-   background-size: contain;
+   background-size: 25vh;
    background-repeat: no-repeat;
    position: absolute;
    right: -30vh;

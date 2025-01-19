@@ -1,18 +1,35 @@
 [
     {
-        "image": "recursos/PNG/marca1.png"
+        "image": "recursos/SVG/starlink.svg",
+        "tamañoespecial": ""
       },
       {
-        "image": "recursos/PNG/marca1.png"
+        "image": "recursos/SVG/aruba.svg",
+        "tamañoespecial": ""
       },
       {
-        "image": "recursos/PNG/marca1.png"
+        "image": "recursos/SVG/mikrotik.svg",
+        "tamañoespecial": "30vh"
       },
       {
-        "image": "recursos/PNG/marca1.png"
+        "image": "recursos/SVG/cisco.svg",
+        "tamaño": ""
       },
       {
-        "image": "recursos/PNG/marca1.png"
+        "image": "recursos/SVG/starlink.svg",
+        "tamañoespecial": ""
+      },
+      {
+        "image": "recursos/SVG/aruba.svg",
+        "tamañoespecial": ""
+      },
+      {
+        "image": "recursos/SVG/mikrotik.svg",
+        "tamañoespecial": "30vh"
+      },
+      {
+        "image": "recursos/SVG/cisco.svg",
+        "tamaño": ""
       }
                 
   ]

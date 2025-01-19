@@ -18,7 +18,7 @@ fetch('recursos/JSON/servicios.json') // Ruta al archivo JSON
             
             const pTexto = document.createElement('p');
             pTexto.classList.add('texto');
-            pTexto.textContent = servicio.texto;
+            pTexto.textContent = "DESCRIPCIÓN: "+servicio.texto;
             
             divServicio.appendChild(divBlur);
             divServicio.appendChild(h1Titulo);
@@ -28,3 +28,4 @@ fetch('recursos/JSON/servicios.json') // Ruta al archivo JSON
         });
     })
     .catch(error => console.error('Error cargando el JSON:', error));
+

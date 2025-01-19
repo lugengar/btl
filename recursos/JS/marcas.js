@@ -19,6 +19,9 @@ fetch('recursos/JSON/marcas.json')
             marcaDiv.classList.add("marca");
 
             marcaDiv.style.backgroundImage = `url('${marcaData.image}')`;
+            if(marcaData.tamaño != "") {
+                marcaDiv.style.backgroundSize = `url('${marcaData.tamaño}')`;
+            }
 
             marcaDiv.style.animation = `animarca ${animationDuration}s linear infinite`;
 
