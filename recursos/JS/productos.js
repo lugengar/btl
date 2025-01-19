@@ -46,37 +46,42 @@ function renderProductos(productos) {
 }
 
 const containers = document.querySelectorAll('.listaproductos, .listaservicios');
-let scrollPosition = 0;
-let llego = false;
-let timeoutId;
-
-function autoScroll(container) {
-    if (container.scrollLeft + container.clientWidth >= container.scrollWidth) {
-        llego = true; 
-    } else if (container.scrollLeft <= 0) {
-        llego = false;
-    }
-
-    if (!llego) {
-        scrollPosition += 0.1; 
-    } else {
-        scrollPosition -= 0.1;
-    }
-
-    container.scrollLeft = scrollPosition;
-}
-
 containers.forEach(container => {
-    let scrollInterval = setInterval(() => autoScroll(container), 10);
 
-    container.addEventListener('mouseenter', () => {
+    let scrollPosition = 0;
+    let llego = false;
+    let scrollInterval;
+    let timeoutId;
+
+    function autoScroll() {
+        if (container.scrollLeft + container.clientWidth >= container.scrollWidth) {
+            llego = true; 
+        } else if (container.scrollLeft <= 0) {
+            llego = false;
+        }
+
+        scrollPosition = llego ? scrollPosition - 1 : scrollPosition + 1;
+        container.scrollLeft = scrollPosition;
+    }
+
+    function startAutoScroll() {
         clearInterval(scrollInterval);
-    });
+        scrollInterval = setInterval(autoScroll, 20);
+    }
+    function startAutoScroll2() {
+        clearInterval(scrollInterval);
+        scrollInterval = setInterval(autoScroll, 10000);
+    }
+    function stopAutoScroll() {
+        clearInterval(scrollInterval);
+        clearTimeout(timeoutId);
+        timeoutId = setTimeout(startAutoScroll, 5000);
+    }
 
-    container.addEventListener('mouseleave', () => {
-        clearTimeout(timeoutId); 
-        timeoutId = setTimeout(() => {
-            scrollInterval = setInterval(() => autoScroll(container), 10);
-        }, 5000); 
-    });
+    startAutoScroll();
+
+    container.addEventListener("touchstart", stopAutoScroll, { passive: true });
+    container.addEventListener("touchend", startAutoScroll2, { passive: true });
+    container.addEventListener("mouseenter", stopAutoScroll);
+    container.addEventListener("mouseleave", startAutoScroll2);
 });
