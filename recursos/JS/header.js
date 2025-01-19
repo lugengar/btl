@@ -9,16 +9,19 @@ window.addEventListener('scroll', function() {
     if (scrollPosition >= 100) {
         header.classList.add('hidden');
         header.classList.remove('visible');
+    } else {
+     
+        header.classList.add('visible');
+        header.classList.remove('hidden');
     }
     if (scrollPosition >= 500) {
         nosotros.style.opacity = "100%";
         nosotros.style.pointerEvents= "all";
+        nosotros.style.cursor= "pointer";
     } else {
         nosotros.style.opacity = "0%";
         nosotros.stylepointerEvents= "none";
-        
-        header.classList.add('visible');
-        header.classList.remove('hidden');
+        nosotros.style.cursor= "default";
     }
 });
 
@@ -34,5 +37,10 @@ function sidebar(){
 }
 
 function redirigir(href){
-    document.getElementById(href).scrollIntoView({ behavior: 'smooth' });
+    var sidebar = document.getElementById('sidebar');
+    document.querySelector("#"+href).scrollIntoView({ behavior: 'smooth' });
+    if(bar == true){
+        bar = !bar
+        sidebar.style.transform = "translateX(110%)"
+    }
 }
