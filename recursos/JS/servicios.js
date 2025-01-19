@@ -1,4 +1,5 @@
-fetch('recursos/JSON/servicios.json') // Ruta al archivo JSON
+fetch('recursos/JSON/servicios.json') 
+
     .then(response => response.json())
     .then(data => {
         const listaServicios = document.querySelector('.listaservicios');

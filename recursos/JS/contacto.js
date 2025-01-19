@@ -1,4 +1,5 @@
 function fetchData() {
+  
   fetch('recursos/JSON/contactos.json')
     .then(response => response.json())
     .then(data => {
