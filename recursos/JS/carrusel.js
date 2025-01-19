@@ -9,7 +9,6 @@ fetch('recursos/JSON/carrusel.json')
     var segundosespera = datos.configuracion.segundosespera
     var animaciontexto = datos.configuracion.animaciontexto
 
-
     let imagenes = [...datos.imagenes];
 
     imagenes.unshift(imagenes[imagenes.length - 1]);
@@ -48,11 +47,12 @@ fetch('recursos/JSON/carrusel.json')
     });
 
     let indiceActual = 1;
+    let indiceAnterior = 1;
     const elementos = document.querySelectorAll(".imagen");
     const textoos = textos.querySelectorAll("p");
     const tiulos = textos.querySelectorAll("h1");
     const indicadores = document.querySelectorAll(".indicador");
-   carrusel.style.transform = `translateX(-${indiceActual * 100}%)`;
+    carrusel.style.transform = `translateX(-${indiceActual * 100}%)`;
 
     function actualizarCarrusel() {
         carrusel.style.transition = 'transform 0.5s ease-in-out';
@@ -60,17 +60,14 @@ fetch('recursos/JSON/carrusel.json')
         indicadores.forEach((ind, i) => 
             ind.classList.toggle("activo", i === (indiceActual > indicadores.length ? 0 : indiceActual < 1 ? indicadores.length - 1 : indiceActual - 1))
         );
-
-        
     }
 
     function moverSlide(adelante = true) {
-    
-        let diferencia = -1
         iniciarIntervalo()
         if (adelante) {
-            
             indiceActual++;
+            indiceAnterior = indiceActual - 1
+
             actualizarCarrusel();
             if (indiceActual === elementos.length - 1) {
                 setTimeout(() => {
@@ -81,7 +78,7 @@ fetch('recursos/JSON/carrusel.json')
             }
         } else {
             indiceActual--;
-            diferencia = 1
+            indiceAnterior = indiceActual + 1
             actualizarCarrusel();
             if (indiceActual === 0) {
                 setTimeout(() => {
@@ -91,7 +88,12 @@ fetch('recursos/JSON/carrusel.json')
                 }, 500);
             }
         }
-        let indiceCorregido2 = (indiceActual+ diferencia > textoos.length ? 0 : indiceActual+ diferencia < 1 ? textoos.length - 1 : indiceActual+ diferencia - 1);
+        animarTexto();
+    }
+
+    // Función para animar el texto
+    function animarTexto() {
+        let indiceCorregido2 = (indiceAnterior > textoos.length ? 0 : indiceAnterior < 1 ? textoos.length - 1 : indiceAnterior - 1);
         let indiceCorregido = (indiceActual > textoos.length ? 0 : indiceActual < 1 ? textoos.length - 1 : indiceActual - 1);
         textoos[indiceCorregido2].style.transition = `transform 0.1s ease-in-out, opacity 0.1s ease-in-out`;
         textoos[indiceCorregido2].style.transitionDelay = `0s`;
@@ -116,9 +118,12 @@ fetch('recursos/JSON/carrusel.json')
 
     window.anteriorSlide = function() { moverSlide(false); };
     window.siguienteSlide = function() { moverSlide(true); };
+
     window.irASlide = function(indice) {
+        indiceAnterior = indiceActual;
         indiceActual = indice;
         actualizarCarrusel();
+        animarTexto();
     };
 
     let inicioX = 0;
@@ -140,12 +145,11 @@ fetch('recursos/JSON/carrusel.json')
         }
         desplazamiento = 0;
     });
+    
     function iniciarIntervalo() {
         clearInterval(intervalo); 
         intervalo = setInterval(() => moverSlide(true), segundosespera * 1000);
     }
-    iniciarIntervalo()
 
+    iniciarIntervalo();
 });
-
-  
