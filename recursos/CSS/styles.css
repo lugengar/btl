@@ -500,7 +500,9 @@ background-image: url();
 
 #contacto{
     min-height: 90vh;
-
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: black;
     grid-area: CON;
 }
