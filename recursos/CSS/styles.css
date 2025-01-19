@@ -1,0 +1,268 @@
+
+p {
+    font-family: "Roboto", serif;
+    font-weight: 300;
+
+    color: white;
+}
+h1 {
+    font-family: "Roboto", serif;
+    font-weight: 900;
+    font-size: 6vh;
+    color: white;
+}
+.minitexto{
+    font-family: "Chillax";
+    font-weight: 500;
+    font-size: 2.5vh;
+    grid-area: MIN;
+    display: flex;
+    justify-content: baseline;
+    color: white;
+}
+#rayas{
+    display: none;
+}
+#sidebar{
+    display: none;
+}
+#sidebar .link{
+    width: 100%;
+}
+.links{
+    padding-right: 5vh;
+    grid-area: LINK;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5vh;
+    justify-content: right;
+    align-items: center;
+}
+.logo{
+    grid-area: LOGO;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.link{
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    margin: 0;
+    font-family: "Chillax";
+    font-weight: 500;
+    font-size: 2vh;
+    grid-area: MIN;
+    display: flex;
+    justify-content: baseline;
+    color: white;
+}
+ .indicadores { 
+    display: flex; 
+    justify-content: center; 
+    width: max-content;
+    height: max-content;
+    padding: 3vh;
+    grid-area: IND; 
+    gap: 2vh;
+}
+.indicador { 
+    width: 1.5vh; 
+    height: 1.5vh; 
+    background-color: rgba(255, 255, 255, 0.219); 
+    border-radius: 20vh; 
+    cursor: pointer; 
+}
+.activo { 
+    background-color: rgba(255, 255, 255, 0.685); 
+}
+button, a{
+    cursor: pointer;
+}
+.imagen{
+    pointer-events: none;
+    position: absolute;
+    background-image: url(recursos/img/a1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+}
+.filtro {
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.397), transparent); 
+}
+.textos {
+    pointer-events: none;
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: grid;
+    grid-template: 
+    ". . . ."25vh
+    ". MIN . ."max-content
+    ". TIT . ."max-content
+    ". TXT TXT ." max-content
+    ". . . ."auto/
+    20vh 80vh 15% auto;
+}
+.textos p {
+    grid-area: TXT;
+    margin: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0%;
+    transform: translateY(5vh);
+   
+}
+.textos h1{
+    grid-area: TIT;
+    margin: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0%;
+    transform: translateY(5vh);
+}
+
+    
+.boton-control{
+    width: 10vh;
+    height: 5vh;
+    background-color: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.685);
+    font-size: 5vh;
+}
+.controles {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: grid;
+    grid-template:
+    ". . . . ." auto
+    "BIZ . . . BDE" max-content
+    ". . . . ." auto
+    ". . IND . ."max-content/
+    max-content auto max-content auto max-content;
+}
+#botonizquierdo{
+    grid-area: BIZ;
+}
+#botonderecho{
+    grid-area: BDE;
+}
+.imagenes{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+#main{
+ 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: aliceblue;
+    left: 0%;
+    top: 0%;
+    display: grid;
+    grid-template:
+    "CAR  " max-content
+    "SER  " max-content
+    "PRO  " max-content
+    "MAR  " max-content
+    "PRS  " max-content
+    "CON  " max-content
+    "FOO  " max-content/
+    auto  ;
+}
+#main section{
+    min-height: 90vh;
+}
+#footer{
+    min-height: 50vh;
+}
+#header{
+    transition: all 0.5s ease-in-out;
+    transition-property: width, height;
+    transition-duration: 0s;
+    z-index: 100;
+    width: 100%;
+    height: 8vh;
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    display: grid;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    grid-template:
+    "LOGO . LINK" auto/
+    15vh auto auto ;
+}
+.hidden{
+    background-color: transparent;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+}
+.visible{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.397), transparent); ;
+
+}
+.logo{
+grid-area: LOGO;
+background-image: url();
+}
+#carrusel{
+    overflow: hidden;
+    max-height: 90vh ;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    background-color: red;
+    grid-area: CAR;
+}
+#servicios{
+    position: relative;
+    background-color: green;
+    grid-area: SER;
+}
+#producto{
+    position: relative;
+    background-color: yellow;
+    grid-area: PRO;
+}
+#productos{
+    position: relative;
+    background-color: black;
+    grid-area: PRS;
+}
+#contacto{
+    position: relative;
+    background-color: white;
+    grid-area: CON;
+}
+#marcas{
+    position: relative;
+    background-color: pink;
+    grid-area: MAR;
+}
+#footer{
+    position: relative;
+    background-color: red;
+    grid-area: FOO;
+}

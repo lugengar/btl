@@ -1,4 +1,4 @@
-fetch('carrusel.json')
+fetch('recursos/JSON/carrusel.json')
 .then(respuesta => respuesta.json())
 .then(datos => {
     let intervalo;
@@ -36,7 +36,6 @@ fetch('carrusel.json')
             indicador.setAttribute("onclick", `irASlide(${indice})`);
             contenedorIndicadores.appendChild(indicador);
             if(indice == 1){
-                console.log(item.texto)
                 setTimeout(() => {
                     titulo.style.opacity = "100%"
                     texto.style.opacity = "100%"
