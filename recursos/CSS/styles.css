@@ -723,7 +723,7 @@ grid-area: REDE;
 .aparece {
     animation: show 0.6s ease-out forwards;
 }
-/*
+
 .listaproductos, .listaservicios, .titulo, .inputs, #producto h1, #producto p, .botonegro, .minitexto, #servicios .titulo {
     opacity: 0;
-}*/
+}
