@@ -1,15 +1,17 @@
 fetch('recursos/JSON/carrusel.json')
 .then(respuesta => respuesta.json())
-.then(datos => {
+.then(info => {
+    ubicacioncarpeta = info.configuracion.ubicacioncarpeta
+    datos = info.imagenes
     let intervalo;
     const carrusel = document.querySelector(".imagenes");
     const controles = document.querySelector(".controles");
     const textos = document.querySelector(".textos");
     const contenedorIndicadores = document.querySelector(".indicadores");
-    var segundosespera = datos.configuracion.segundosespera
-    var animaciontexto = datos.configuracion.animaciontexto
+    var segundosespera = info.configuracion.segundosespera
+    var animaciontexto = info.configuracion.animaciontexto
 
-    let imagenes = [...datos.imagenes];
+    let imagenes = [...info.imagenes];
 
     imagenes.unshift(imagenes[imagenes.length - 1]);
     imagenes.push(imagenes[1]);
@@ -20,7 +22,7 @@ fetch('recursos/JSON/carrusel.json')
         const texto = document.createElement("p");
         slide.classList.add("imagen");
         slide.style.left = `${indice * 100}%`;
-        slide.style.backgroundImage = `url(${item.imagen})`;
+        slide.style.backgroundImage = `url(${ubicacioncarpeta+item.imagen})`;
         slide.style.backgroundPosition = item.posicionimagen;
         carrusel.appendChild(slide);
        

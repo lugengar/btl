@@ -24,6 +24,7 @@ body{
 }
 p,a{
     grid-area: TXT;
+    text-shadow: 1vh 1vh 2vh rgba(0, 0, 0, 0.5);
 
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -40,6 +41,7 @@ a {
 
 }
 h1 {
+    text-shadow: 1vh 1vh 2vh rgba(0, 0, 0, 0.5);
     grid-area: TIT;
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -178,7 +180,7 @@ button, a{
     position: absolute;
     left: 0;
     top: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.397), transparent); 
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.719), transparent); 
 }
 .textos {
     pointer-events: none;
@@ -197,6 +199,9 @@ button, a{
     ". . . ."auto/
     10vw 80vh 15% auto;
 }
+.texto{
+    font-size: 3vh;
+}
 .textos p {
     font-size: 3vh;
     margin: 0;
@@ -214,6 +219,7 @@ button, a{
 
     
 .boton-control{
+    mix-blend-mode: difference;
     width: 10vh;
     height: 5vh;
     background-color: transparent;
@@ -348,7 +354,7 @@ background-image: url();
     ". . ."auto
     ". MIN ." max-content
     ". TIT ." max-content
-    ". SERV SERV " 65vh
+    ". SERV SERV " max-content
     ". BOT . " auto 
     ". . . " auto /
     auto 80vh auto ;
@@ -387,7 +393,8 @@ background-image: url();
     background-color: rgba(255, 255, 255, 0.116);
     grid-template: 
     "TIT" max-content
-    "TXT" auto/
+    "TXT" auto
+    "BOT"max-content/
     45vh ;
 
 }
@@ -395,26 +402,30 @@ background-image: url();
     cursor: default;
     transition: background-size 0.3s ease;
     position: relative;
-    background-position: center;
-    background-size: auto 100%;
+    background-position: top;
+    background-size: 100% auto;
     background-repeat: no-repeat;
     display: grid;
     width: 50vh;
-    height: 50vh;
-    background-color: rgba(255, 255, 255, 0.116);
+    height: 55vh;
+    background-color: white;
     grid-template: 
-    "TXT" 50vh
-    "TIT" auto/
+    "TXT" auto
+    "BOT"max-content
+    "TIT" max-content/
     50vh ;
 }
+
 .producto h1{
     text-overflow: ellipsis;
     background-color: black;
     border: 0.05vh solid white;
     padding: 1vh;
+    z-index: 3;
+
 }
 .producto p{
-    padding: 1vh;
+    padding: 2vh;
     opacity: 0%;
     transition: opacity 0.2s ease-in-out;
     z-index: 2;
@@ -441,6 +452,8 @@ background-image: url();
     -webkit-backdrop-filter: blur(0.5vh);
 }
 .botonegro{
+    z-index: 3;
+
     background-color: black;
     border: 0.05vh solid white;
     grid-area: BOT;
@@ -513,7 +526,7 @@ background-image: url();
 }
 #productos{
     
-    min-height: 90vh;
+    min-height: 100vh;
     background-size: 190vh;
     background-position: -15vh -15vh;
     grid-area: PRS;
@@ -522,7 +535,7 @@ background-image: url();
     ". . ."auto
     ". MIN ." max-content
     ". TIT ." max-content
-    ". SERV SERV " 65vh
+    ". SERV SERV " max-content
     ". BOT . " auto 
     ". . . " auto /
     auto 80vh auto ;

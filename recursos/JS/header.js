@@ -44,8 +44,14 @@ function redirigir(href){
         sidebar.style.transform = "translateX(110%)"
     }
 }
-function consultar(consulta){
+function consultar(consulta,producto){
     var asunto = document.getElementById('asunto');
+    var mensaje = document.getElementById('mensaje');
+    if(consulta=="producto"){
+        mensaje.textContent = "Hola, quisiera saber el precio del "+consulta+': "'+producto+'"'+". Gracias."
+    }else  if(consulta=="servicio"){
+        mensaje.textContent = "Hola, quisiera saber la cotizacion del "+producto+". Gracias."
+    }
     asunto.value = consulta
     document.querySelector("#contacto").scrollIntoView({ behavior: 'smooth' });
     

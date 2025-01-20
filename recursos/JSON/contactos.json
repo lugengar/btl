@@ -1,23 +1,29 @@
-[
+{
+  "configuracion": 
+  {
+      "ubicacioncarpeta": "recursos/SVG/"
+  },
+  "imagenes":[
     {
-      "image": "recursos/SVG/carta.svg",
+      "image": "carta.svg",
       "url": "soporte@btl-solutions.com.ar",
       "tipo": "atencion"
     },
     {
-      "image": "recursos/SVG/carta.svg",
+      "image": "carta.svg",
       "url": "reclamos@bot-solutions.com.ar",
       "tipo": "atencion"
     },
     {
-        "image": "recursos/SVG/carta.svg",
+        "image": "carta.svg",
         "url": "info@btl-solutions.com",
         "tipo": "ubicacion"
       },
       {
-          "image": "recursos/SVG/carta.svg",
+          "image": "carta.svg",
           "url": "administracion@btl.com.ar",
           "tipo": "ubicacion"
         }
                 
 ]
+}

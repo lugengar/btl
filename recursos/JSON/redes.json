@@ -1,20 +1,25 @@
-[
+{
+  "configuracion": 
+  {
+      "ubicacioncarpeta": "recursos/SVG/"
+  },
+  "imagenes":[
     {
-      "image": "recursos/SVG/whats.svg",
+      "image": "whats.svg",
       "url": "https://wa.me/541123946762"
     },
     {
-      "image": "recursos/SVG/face.svg",
+      "image": "face.svg",
       "url": ""
     },
     {
-      "image": "recursos/SVG/insta.svg",
+      "image": "insta.svg",
       "url": ""
     },
     {
-      "image": "recursos/SVG/link.svg",
+      "image": "link.svg",
       "url": ""
     }
                 
   ]
-  
+}

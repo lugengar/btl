@@ -3,6 +3,7 @@ function fetchData() {
   fetch('recursos/JSON/contactos.json')
     .then(response => response.json())
     .then(data => {
+      
       generateHTML(data);
     })
     .catch(error => {
@@ -10,7 +11,9 @@ function fetchData() {
     });
 }
 
-function generateHTML(data) {
+function generateHTML(info) {
+  ubicacioncarpeta = info.configuracion.ubicacioncarpeta
+  data = info.imagenes
   const atencionContainer = document.querySelector('#atencion');
   const ubicacionContainer = document.querySelector('#ubicacion');
   
@@ -20,7 +23,7 @@ function generateHTML(data) {
   atencion.forEach(item => {
     const a = document.createElement('a');
     a.classList.add('correo');
-    a.style.backgroundImage = `url(${item.image})`;
+    a.style.backgroundImage = `url(${ubicacioncarpeta+item.image})`;
     a.textContent = item.url;
     atencionContainer.appendChild(a);
   });

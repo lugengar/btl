@@ -1,23 +1,25 @@
 {
     "configuracion": 
     {
-        "segundosespera": 6
+        "segundosespera": 15,
+        "ubicacioncarpeta": "recursos/CARRUSEL/"
+
     },
     "imagenes": [
         {
-            "imagen": "recursos/JPG/a2.jpg",
+            "imagen": "imagen2.jpg",
             "posicionimagen": "center",
             "titulo": "¿POR QUÉ BTL?",
             "texto": "BTL Solutions ofrece un servicio integral con redes a medida, alquiler de equipos, administración de servidores y backups en la nube, además de instalación de cámaras y servicio de guardia, asegurando seguridad y continuidad para tu empresa."
         },
         {
-            "imagen": "recursos/JPG/a1.jpg",
-            "posicionimagen": "center",
+            "imagen": "imagen4.jpg",
+            "posicionimagen": "bottom",
             "titulo": "STARLINK",
             "texto": "Starlink, junto con routers Mikrotik y puntos de acceso Aruba, ofrece una conexión rápida, confiable y de alto rendimiento, ideal para áreas remotas. Esta combinación garantiza una red estable y productiva para tu negocio. Solicita cotización en nuestra página."
         },
         {
-            "imagen": "recursos/WEBP/a3.webp",
+            "imagen": "imagen3.jpg",
             "posicionimagen": "18%",
             "titulo": "SOPORTE",
                 "texto": "BTL Solutions ofrece soporte personalizado con asistencia remota rápida y eficiente, servicio de guardia 24/7, y visitas programadas para optimizar la red y prevenir fallos, incluyendo resolución de incidencias nivel 1 en sitio."

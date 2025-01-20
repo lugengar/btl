@@ -1,13 +1,15 @@
 fetch('recursos/JSON/servicios.json') 
 
     .then(response => response.json())
-    .then(data => {
+    .then(info => {
+        ubicacioncarpeta = info.configuracion.ubicacioncarpeta
+        data = info.imagenes
         const listaServicios = document.querySelector('.listaservicios');
         
         data.forEach(servicio => {
             const divServicio = document.createElement('div');
             divServicio.classList.add('servicio');
-            divServicio.style.backgroundImage = `url(${servicio.imagen})`;
+            divServicio.style.backgroundImage = `url(${ubicacioncarpeta+servicio.imagen})`;
             divServicio.style.backgroundPosition = servicio.posicionimagen;
             
             const divBlur = document.createElement('div');
@@ -16,7 +18,7 @@ fetch('recursos/JSON/servicios.json')
             const h1Titulo = document.createElement('h1');
             h1Titulo.classList.add('subtitulo');
             h1Titulo.textContent = servicio.titulo;
-            
+            divServicio.innerHTML= `<button class="botonegro" onclick="consultar('servicio','${servicio.titulo}')">CONSULTAR COTIZACIÓN</button>`
             const pTexto = document.createElement('p');
             pTexto.classList.add('texto');
             pTexto.textContent = "DESCRIPCIÓN: "+servicio.texto;

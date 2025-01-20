@@ -1,20 +1,21 @@
 fetch('recursos/JSON/productos.json')
     .then(response => response.json())
     .then(data => {
-        renderConfiguracion(data.configuracion);
-        renderProductos(data.imagenes);
+        renderConfiguracion(data);
+        renderProductos(data);
     })
     .catch(error => {
         console.error('Error al cargar el archivo JSON:', error);
     });
 
-function renderConfiguracion(config) {
+function renderConfiguracion(info) {
+    config = info.configuracion
     const producto = document.getElementById('producto');
     const h1 = document.createElement('h1');
     const p = document.createElement('p');
     
-    producto.src = config.imagenprincipal;
-
+    producto.style.backgroundImage = `url(${config.ubicacioncarpeta+config.imagenprincipal})`;
+    
     h1.textContent = config.titulo;
     p.textContent = config.texto;
 
@@ -22,7 +23,9 @@ function renderConfiguracion(config) {
     producto.appendChild(p);
 }
 
-function renderProductos(productos) {
+function renderProductos(info) {
+    ubicacioncarpeta = info.configuracion.ubicacioncarpeta
+    productos = info.imagenes
     const listaProductos = document.querySelector('.listaproductos');
 
     productos.forEach(producto => {
@@ -31,12 +34,13 @@ function renderProductos(productos) {
         const p = document.createElement('p');
         const divBlur = document.createElement('div');
         divBlur.classList.add('blur');
-        
+        p.classList.add('texto');
         h3.textContent = producto.titulo;
-        p.textContent = "DESCRIPCIÓN: "+producto.texto;
+        p.textContent = producto.texto;
         item.classList.add('producto');
         h3.classList.add('minititulo');
-        item.style.backgroundImage = `url(${producto.imagen})`;
+        item.innerHTML= `<button class="botonegro" onclick="consultar('producto','${producto.titulo}')">CONSULTAR PRECIO</button>`
+        item.style.backgroundImage = `url(${ubicacioncarpeta+producto.imagen})`;
         item.style.backgroundPosition = producto.posicionimagen
         item.appendChild(divBlur);
         item.appendChild(h3);

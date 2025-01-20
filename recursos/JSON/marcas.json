@@ -1,36 +1,37 @@
-[
+{
+  "configuracion": 
+  {
+      "ubicacioncarpeta": "recursos/MARCAS/"
+  },
+  "imagenes":[
     {
-        "image": "recursos/SVG/starlink.svg",
+        "image": "starlink.svg",
         "tamañoespecial": ""
       },
       {
-        "image": "recursos/SVG/aruba.svg",
+        "image": "aruba.svg",
         "tamañoespecial": ""
       },
       {
-        "image": "recursos/SVG/mikrotik.svg",
+        "image": "mikrotik.svg",
         "tamañoespecial": "30vh"
       },
       {
-        "image": "recursos/SVG/cisco.svg",
-        "tamaño": ""
+        "image": "cisco.svg",
+        "tamañoespecial": "20vh"
       },
       {
-        "image": "recursos/SVG/starlink.svg",
+        "image": "hp.svg",
+        "tamañoespecial": "12vh"
+      },
+      {
+        "image": "lenovo.svg",
         "tamañoespecial": ""
       },
       {
-        "image": "recursos/SVG/aruba.svg",
-        "tamañoespecial": ""
-      },
-      {
-        "image": "recursos/SVG/mikrotik.svg",
-        "tamañoespecial": "30vh"
-      },
-      {
-        "image": "recursos/SVG/cisco.svg",
-        "tamaño": ""
+        "image": "asus.svg",
+        "tamañoespecial": "20vh"
       }
                 
-  ]
+  ]}
   

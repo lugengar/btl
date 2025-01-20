@@ -1,20 +1,25 @@
-[
+{
+    "configuracion": 
     {
-        "imagen": "recursos/JPG/a2.jpg",
-        "posicionimagen": "center",
+        "ubicacioncarpeta": "recursos/SERVICIOS/"
+    },
+    "imagenes": [
+    {
+        "imagen": "servicio1.jpg",
+        "posicionimagen": "left",
         "titulo": "SERVICIO EMPRESARIAL",
-        "texto": "1consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl"
+        "texto": "Diseño y mantenimiento de infraestructura de red con soporte remoto y/o visitas programas para resolución de incidencias en sitio, servicio de guardia ante incidencias y servicio de instalación y administración de cámaras en nube."
     },
     {
-        "imagen": "recursos/JPG/a1.jpg",
+        "imagen": "servicio2.jpg",
         "posicionimagen": "center",
         "titulo": "SERVICIO ITERANTE",
-        "texto": "2nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl"
+        "texto": "El servicio itinerante de Starlink permite la Conexión a Internet donde quieras que estés y en movimiento (hasta 160km/h). Instalación de equipo externa y gestión del servicio itinerante con la empresa Starlink."
     },
     {
-        "imagen": "recursos/WEBP/a3.webp",
+        "imagen": "servicio3.jpg",
         "posicionimagen": "18%",
         "titulo": "SERVICIO MARÍTIMO",
-            "texto": "3Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl"
+            "texto": "A diferencia del itinerante el servicio marítimo amplía las distancia de cobertura más allá de la costa, permitiendo la conexión aún en la embarcación profunda. Ideal para botes pesqueros o vehículos recreativos como yates que deseen una conexión estable como en casa."
     }
-]
+]}

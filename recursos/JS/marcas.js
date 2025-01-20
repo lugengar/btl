@@ -1,6 +1,8 @@
 fetch('recursos/JSON/marcas.json')
     .then(response => response.json())
-    .then(marcasData => {
+    .then(info => {
+        ubicacioncarpeta = info.configuracion.ubicacioncarpeta
+        marcasData = info.imagenes
         const marcasContainer = document.getElementById("marcas");
         const totalMarcas = marcasData.length;
 
@@ -18,9 +20,9 @@ fetch('recursos/JSON/marcas.json')
             const marcaDiv = document.createElement("div");
             marcaDiv.classList.add("marca");
 
-            marcaDiv.style.backgroundImage = `url('${marcaData.image}')`;
-            if(marcaData.tamaño != "") {
-                marcaDiv.style.backgroundSize = `url('${marcaData.tamaño}')`;
+            marcaDiv.style.backgroundImage = `url('${ubicacioncarpeta+marcaData.image}')`;
+            if(marcaData.tamañoespecial != "") {
+                marcaDiv.style.backgroundSize = marcaData.tamañoespecial
             }
 
             marcaDiv.style.animation = `animarca ${animationDuration}s linear infinite`;

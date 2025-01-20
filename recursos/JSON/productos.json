@@ -1,28 +1,29 @@
 {
     "configuracion": 
     {
-        "imagenprincipal": "recursos/WEBP/a3.webp",
+        "ubicacioncarpeta": "recursos/PRODUCTOS/",
+        "imagenprincipal": "imagen3.webp",
         "titulo": "TODO PARA TU NEGOCIO",
         "texto": "En BTL Solutions, ofrecemos una amplia gama de productos de alta calidad para el diseño y la infraestructura de redes. Trabajamos con soluciones de talla empresarial, utilizando equipos y tecnologías de marcas reconocidas a nivel mundial, que destacan por su fiabilidad, rendimiento y soporte técnico continuo. Estas marcas están enfocadas en ofrecer máxima seguridad y eficiencia, garantizando redes robustas y escalables que responden a las necesidades más exigentes. Nuestro compromiso es proporcionar los mejores productos del mercado, combinados con un servicio personalizado, para asegurar el óptimo funcionamiento y la protección de las redes de nuestros clientes"
     },
     "imagenes": [
         {
-            "imagen": "recursos/PRODUCTOS/mikrotik.png",
-            "posicionimagen": "center",
-            "titulo": "ROUTER MIKROTIK Rb750gr3 5",
-            "texto": "1consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl"
+            "imagen": "mikrotik.png",
+            "posicionimagen": "top",
+            "titulo": "ROUTER MIKROTIK",
+            "texto": "Somos especialistas en Routers Mikrotik y conocemos a detalle cada uno de sus beneficios, como la construcción de una red robusta, ampliamente personalizable y segura con reglas de Firewall y VPN. Ideales para una infraestructura de red de graado empresarial."
         },
         {
-            "imagen": "recursos/PRODUCTOS/aruba.jpg",
-            "posicionimagen": "center",
-            "titulo": "ARUBA",
-            "texto": "2nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl"
+            "imagen": "aruba.jpg",
+            "posicionimagen": "top",
+            "titulo": "ACCES POINT ARUBA",
+            "texto": "Los Access point de HP línea Aruba, son conocidos por sus altas velocidades con wi-fi 6 y la incorporación de protocolos de seguridad más recientes e innovadores del mercado, además de una amplia personalización y gestión de múltiples usuarios simultáneos a través de distintas redes."
         },
         {
-            "imagen": "recursos/PRODUCTOS/pc.webp",
-            "posicionimagen": "18%",
+            "imagen": "pc.webp",
+            "posicionimagen": "top",
             "titulo": "COTIZACIÓN DE PC PERSONALIZADA",
-                "texto": "3Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl"
+                "texto": "Realizamos cotizaciones de equipos a medida para tu empresa, equipos armados con sistema operativo instalado y preconfigurado para una incorporación inmediata a su estación de trabajo"
         }
     ]
 }

@@ -30,7 +30,7 @@
         ". . ."auto
         ". MIN ." max-content
         ". TIT ." max-content
-        "SERV SERV SERV " 65vh
+        "SERV SERV SERV " max-content
         ". . . " 1vh 
         "BOT BOT . " auto 
         ". . . " auto /
@@ -65,7 +65,7 @@
         ". . ."auto
         ". MIN ." max-content
         ". TIT ." max-content
-        ". SERV SERV " 65vh
+        ". SERV SERV " max-content
         ". BOT . " auto 
         ". . . " auto /
         2% auto  2%  ;
