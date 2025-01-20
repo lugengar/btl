@@ -1,14 +1,23 @@
 [
     {
       "image": "recursos/SVG/carta.svg",
-      "url": "a@gmail.com",
+      "url": "soporte@btl-solutions.com.ar",
       "tipo": "atencion"
     },
     {
-        "image": "recursos/SVG/telefono.svg",
-        "url": "11 5389854",
+      "image": "recursos/SVG/carta.svg",
+      "url": "reclamos@bot-solutions.com.ar",
+      "tipo": "atencion"
+    },
+    {
+        "image": "recursos/SVG/carta.svg",
+        "url": "info@btl-solutions.com",
         "tipo": "ubicacion"
-      }
+      },
+      {
+          "image": "recursos/SVG/carta.svg",
+          "url": "administracion@btl.com.ar",
+          "tipo": "ubicacion"
+        }
                 
 ]
-  

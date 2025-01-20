@@ -348,7 +348,7 @@ background-image: url();
     ". . ."auto
     ". MIN ." max-content
     ". TIT ." max-content
-    ". SERV SERV " 60vh
+    ". SERV SERV " 65vh
     ". BOT . " auto 
     ". . . " auto /
     auto 80vh auto ;
@@ -436,6 +436,7 @@ background-image: url();
 
 }
 .producto:hover .blur{
+    background-color: rgba(0, 0, 0, 0.705);
     backdrop-filter: blur(0.5vh);
     -webkit-backdrop-filter: blur(0.5vh);
 }
@@ -461,6 +462,7 @@ background-image: url();
 }
 
 .servicio:hover .blur{
+    background-color: rgba(0, 0, 0, 0.705);
     backdrop-filter: blur(0.5vh);
     -webkit-backdrop-filter: blur(0.5vh);
 }
@@ -520,7 +522,7 @@ background-image: url();
     ". . ."auto
     ". MIN ." max-content
     ". TIT ." max-content
-    ". SERV SERV " 60vh
+    ". SERV SERV " 65vh
     ". BOT . " auto 
     ". . . " auto /
     auto 80vh auto ;

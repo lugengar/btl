@@ -3,25 +3,25 @@
     {
         "imagenprincipal": "recursos/WEBP/a3.webp",
         "titulo": "TODO PARA TU NEGOCIO",
-        "texto": "1consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl"
+        "texto": "En BTL Solutions, ofrecemos una amplia gama de productos de alta calidad para el diseño y la infraestructura de redes. Trabajamos con soluciones de talla empresarial, utilizando equipos y tecnologías de marcas reconocidas a nivel mundial, que destacan por su fiabilidad, rendimiento y soporte técnico continuo. Estas marcas están enfocadas en ofrecer máxima seguridad y eficiencia, garantizando redes robustas y escalables que responden a las necesidades más exigentes. Nuestro compromiso es proporcionar los mejores productos del mercado, combinados con un servicio personalizado, para asegurar el óptimo funcionamiento y la protección de las redes de nuestros clientes"
     },
     "imagenes": [
         {
-            "imagen": "recursos/JPG/a2.jpg",
+            "imagen": "recursos/PRODUCTOS/mikrotik.png",
             "posicionimagen": "center",
-            "titulo": "PRODUCTO 1",
+            "titulo": "ROUTER MIKROTIK Rb750gr3 5",
             "texto": "1consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl"
         },
         {
-            "imagen": "recursos/JPG/a1.jpg",
+            "imagen": "recursos/PRODUCTOS/aruba.jpg",
             "posicionimagen": "center",
-            "titulo": "PRODUCTO 2",
+            "titulo": "ARUBA",
             "texto": "2nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl"
         },
         {
-            "imagen": "recursos/WEBP/a3.webp",
+            "imagen": "recursos/PRODUCTOS/pc.webp",
             "posicionimagen": "18%",
-            "titulo": "PRODUCTO 3",
+            "titulo": "COTIZACIÓN DE PC PERSONALIZADA",
                 "texto": "3Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl"
         }
     ]
