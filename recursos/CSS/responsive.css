@@ -106,6 +106,7 @@
     }
     #productos{
         min-height: 90vh;
+        background-size: 150vh;
         grid-area: PRS;
         display: grid;
         grid-template: 
