@@ -145,14 +145,17 @@ input[type="search"]::-webkit-search-cancel-button {
     gap: 2vh;
 }
 .indicador { 
+    box-shadow: 0vh 0vh 2vh black;
     width: 1.5vh; 
     height: 1.5vh; 
-    background-color: rgba(255, 255, 255, 0.219); 
+    background-color: rgba(255, 255, 255, 0.356); 
     border-radius: 20vh; 
     cursor: pointer; 
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 .activo { 
-    background-color: rgba(255, 255, 255, 0.685); 
+    transform: scale(1.2);
+    background-color: rgba(255, 255, 255, 0.781); 
 }
 button, a{
     cursor: pointer;
@@ -314,7 +317,7 @@ button, a{
     15vh auto auto ;
 }
 .hidden{
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.308);
     -webkit-backdrop-filter: blur(5vh);
     backdrop-filter: blur(5vh);
 }
