@@ -7,12 +7,13 @@ fetch('recursos/JSON/redes.json')
         
         data.forEach(servicio => {
             const divServicio = document.createElement('a');
-            divServicio.target = "_blank"
+           
             divServicio.classList.add('red');
             divServicio.style.backgroundImage = `url(${ubicacioncarpeta+servicio.image})`;
             if(servicio.image == "whats.svg"){
                 const divServicio2 = document.createElement('a'); 
                 divServicio2.classList.add('whats');
+                divServicio2.target = "_blank"
                 divServicio2.style.backgroundImage = `url(${ubicacioncarpeta+servicio.image})`;
                 divServicio2.href = servicio.url; 
                 document.getElementById("main").appendChild(divServicio2);
