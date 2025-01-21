@@ -36,7 +36,7 @@ function renderProductos(info) {
         const p = document.createElement('p');
         const divBlur = document.createElement('div');
         
-        if (indice > 3) {
+        if (indice > 4) {
             item.style.display = "none";
             item.classList.add("oculto");
         }
@@ -62,7 +62,7 @@ function renderProductos(info) {
     botonVerMas.addEventListener("click", function () {
         let ocultos = document.querySelectorAll(".listaproductos .producto.oculto");
         ocultos.forEach((producto, index) => {
-            if (index < 3 && producto.style.display === "none") {
+            if (index < 4 && producto.style.display === "none") {
                 if (producto.classList.contains("oculto") && producto.style.display === "none") {
                     let titulo = producto.querySelector(".minititulo").textContent.toLowerCase();
                     let marca = producto.getAttribute("data-marca").toLowerCase();
