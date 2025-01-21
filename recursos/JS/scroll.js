@@ -9,7 +9,7 @@ function isElementInViewport(el, offset = 100) {
 }
 
 function handleScroll() {
-    const elements = document.querySelectorAll('.listaproductos, .listaservicios, .titulo, .inputs, #producto h1, #producto p, .botonegro, .minitexto, #servicios .titulo');
+    const elements = document.querySelectorAll('.producto, .servicio, .titulo, .inputs, #producto h1, #producto p, .botonegro, .minitexto, #servicios .titulo');
     elements.forEach((element) => {
         if (isElementInViewport(element, 200)) { 
             element.classList.add('aparece');

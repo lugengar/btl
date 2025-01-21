@@ -6,30 +6,37 @@
   "imagenes":[
     {
         "image": "starlink.svg",
+        "nombre": "STARLINK",
         "tamañoespecial": ""
       },
       {
         "image": "aruba.svg",
+        "nombre": "ARUVA",
         "tamañoespecial": ""
       },
       {
         "image": "mikrotik.svg",
+        "nombre": "MIKROTIK",
         "tamañoespecial": "30vh"
       },
       {
         "image": "cisco.svg",
+        "nombre": "CISCO",
         "tamañoespecial": "20vh"
       },
       {
         "image": "hp.svg",
+        "nombre": "HP",
         "tamañoespecial": "12vh"
       },
       {
         "image": "lenovo.svg",
+        "nombre": "LENOVO",
         "tamañoespecial": ""
       },
       {
         "image": "asus.svg",
+        "nombre": "ASUS",
         "tamañoespecial": "20vh"
       }
                 

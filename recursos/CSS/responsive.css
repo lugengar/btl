@@ -65,7 +65,10 @@
         ". . ."auto
         ". MIN ." max-content
         ". TIT ." max-content
-        ". SERV SERV " max-content
+        ". BUS ." max-content
+        ". BUS2 ." max-content
+        ". SERV . " minmax(60vh, max-content)
+        
         ". BOT . " auto 
         ". . . " auto /
         2% auto  2%  ;
@@ -73,6 +76,22 @@
     .listaservicios{
         padding-left: 2vh;
         padding-right: 2vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 5vh;
+    }
+    .listaproductos{
+        padding-left: 2vh;
+        padding-right: 2vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 5vh;
     }
     .informacion{
         grid-area: INFO;

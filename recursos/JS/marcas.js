@@ -4,6 +4,7 @@ fetch('recursos/JSON/marcas.json')
         ubicacioncarpeta = info.configuracion.ubicacioncarpeta
         marcasData = info.imagenes
         const marcasContainer = document.getElementById("marcas");
+        const marcasContainer2 = document.getElementById("marcasbuscar");
         const totalMarcas = marcasData.length;
 
         const screenWidth = window.innerWidth;
@@ -18,9 +19,13 @@ fetch('recursos/JSON/marcas.json')
 
         marcasData.forEach((marcaData, index) => {
             const marcaDiv = document.createElement("div");
+            const marcaDiv2 = document.createElement("option");
             marcaDiv.classList.add("marca");
+            marcaDiv2.classList.add("marca2");
 
             marcaDiv.style.backgroundImage = `url('${ubicacioncarpeta+marcaData.image}')`;
+            marcaDiv2.textContent= marcaData.nombre;
+            marcaDiv2.value= marcaData.nombre;
             if(marcaData.tamañoespecial != "") {
                 marcaDiv.style.backgroundSize = marcaData.tamañoespecial
             }
@@ -31,6 +36,7 @@ fetch('recursos/JSON/marcas.json')
             marcaDiv.style.animationDelay = `${delay}s`;
 
             marcasContainer.appendChild(marcaDiv);
+            marcasContainer2.appendChild(marcaDiv2);
         });
     })
     .catch(error => console.error("Error cargando el JSON:", error));

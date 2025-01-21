@@ -354,31 +354,35 @@ background-image: url();
     ". . ."auto
     ". MIN ." max-content
     ". TIT ." max-content
-    ". SERV SERV " max-content
+    ". SERV . " max-content
     ". BOT . " auto 
     ". . . " auto /
-    auto 80vh auto ;
+    auto 73vw  auto ;
 }
 
 .listaservicios{
     gap: 3vh;
-    overflow-x: auto;
-    overflow-y: hidden;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
     grid-area: SERV;
     display: flex;
     position: relative;
+    overflow: hidden;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5vh;
+    padding-top: 1vh;
 }
 .listaproductos{
     gap: 3vh;
-    overflow-x: auto;
-    overflow-y: hidden;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
     grid-area: SERV;
     display: flex;
     position: relative;
+    overflow: hidden;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5vh;
+    padding-top: 1vh;
 }
 .servicio{
     cursor: default;
@@ -525,7 +529,8 @@ background-image: url();
     border: 0.05vh solid white;
 }
 #productos{
-    
+    padding-top: 5vh;
+    padding-bottom: 5vh;
     min-height: 100vh;
     background-size: 190vh;
     background-position: -15vh -15vh;
@@ -535,12 +540,27 @@ background-image: url();
     ". . ."auto
     ". MIN ." max-content
     ". TIT ." max-content
-    ". SERV SERV " max-content
+    ". BUS ." max-content
+    ". BUS2 ." max-content
+    ". SERV . " minmax(60vh, max-content)
     ". BOT . " auto 
     ". . . " auto /
-    auto 80vh auto ;
+    auto 73vw auto ;
 }
-
+#buscar{
+    grid-area: BUS;
+    padding: 1vh;
+}
+#marcasbuscar{
+    gap: 2vh;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    position: relative;
+    grid-area: BUS2;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
 
 #video{
     min-height: 90vh;
@@ -563,7 +583,7 @@ background-image: url();
     ". MIN  ." max-content
     ". TIT  ." max-content
     ". FORM  . " max-content
- 
+
     ". BOT  . " auto 
     ". . .  " auto /
     auto 80vh auto ;
@@ -683,7 +703,16 @@ background-repeat: no-repeat;
     min-width: 30vh;
     height: 100%;
 }
-
+.marca2{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 10vh;
+    background-color: black;
+    min-width: 15vh;
+    height: 10vh;
+    border: 0.05vh solid white;
+ }
+ 
 @keyframes animarca {
     0%{
         right: -30vh;
@@ -737,6 +766,6 @@ grid-area: REDE;
     animation: show 0.6s ease-out forwards;
 }
 
-.listaproductos, .listaservicios, .titulo, .inputs, #producto h1, #producto p, .botonegro, .minitexto, #servicios .titulo {
+.producto, .servicio, .titulo, .inputs, #producto h1, #producto p, .botonegro, .minitexto, #servicios .titulo {
     opacity: 0;
 }

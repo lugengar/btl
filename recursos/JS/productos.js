@@ -24,69 +24,103 @@ function renderConfiguracion(info) {
 }
 
 function renderProductos(info) {
-    ubicacioncarpeta = info.configuracion.ubicacioncarpeta
-    productos = info.imagenes
+    ubicacioncarpeta = info.configuracion.ubicacioncarpeta;
+    productos = info.imagenes;
     const listaProductos = document.querySelector('.listaproductos');
-
+    let indice = 0;
+    
     productos.forEach(producto => {
+        indice++;
         const item = document.createElement('div');
         const h3 = document.createElement('h1');
         const p = document.createElement('p');
         const divBlur = document.createElement('div');
+        
+        if (indice > 1) {
+            item.style.display = "none";
+            item.classList.add("oculto");
+        }
+        
         divBlur.classList.add('blur');
         p.classList.add('texto');
         h3.textContent = producto.titulo;
         p.textContent = producto.texto;
         item.classList.add('producto');
         h3.classList.add('minititulo');
-        item.innerHTML= `<button class="botonegro" onclick="consultar('producto','${producto.titulo}')">CONSULTAR PRECIO</button>`
+        item.setAttribute("data-marca", producto.marca);
+        item.innerHTML = `<button class="botonegro" onclick="consultar('producto','${producto.titulo}')">CONSULTAR PRECIO</button>`;
         item.style.backgroundImage = `url(${ubicacioncarpeta+producto.imagen})`;
-        item.style.backgroundPosition = producto.posicionimagen
+        item.style.backgroundPosition = producto.posicionimagen;
         item.appendChild(divBlur);
         item.appendChild(h3);
         item.appendChild(p);
         listaProductos.appendChild(item);
     });
+
+    
+    const botonVerMas = document.getElementById('vermas');
+    botonVerMas.addEventListener("click", function () {
+        let ocultos = document.querySelectorAll(".listaproductos .producto.oculto");
+        ocultos.forEach((producto, index) => {
+            if (index < 1 && producto.style.display === "none") {
+                if (producto.classList.contains("oculto") && producto.style.display === "none") {
+                    let titulo = producto.querySelector(".minititulo").textContent.toLowerCase();
+                    let marca = producto.getAttribute("data-marca").toLowerCase();
+                    let filtro = document.getElementById("buscar").value.toLowerCase();
+                    let marcaSeleccionada = document.getElementById("marcasbuscar").value.toLowerCase();
+
+                    if ((titulo.includes(filtro) || marca.includes(filtro)) && (marcaSeleccionada === "" || marca === marcaSeleccionada)) {
+                        producto.style.display = "grid";
+                        producto.classList.remove("oculto");
+                    }
+                }
+            }
+        });
+
+        actualizarBotonVerMas();
+    });
 }
-/*
-const containers = document.querySelectorAll('.listaproductos, .listaservicios');
-containers.forEach(container => {
 
-    let scrollPosition = 0;
-    let llego = false;
-    let scrollInterval;
-    let timeoutId;
+function actualizarVisibilidadProductos() {
+    let filtro = document.getElementById("buscar").value.toLowerCase();
+    let marcaSeleccionada = document.getElementById("marcasbuscar").value.toLowerCase();
+    let productos = document.querySelectorAll(".listaproductos .producto");
+    let sinResultados = document.getElementById("sinResultados");
+    let hayResultados = false;
+    
+    productos.forEach(producto => {
+        let titulo = producto.querySelector(".minititulo").textContent.toLowerCase();
+        let marca = producto.getAttribute("data-marca").toLowerCase();
 
-    function autoScroll() {
-        if (container.scrollLeft + container.clientWidth >= container.scrollWidth) {
-            llego = true; 
-        } else if (container.scrollLeft <= 0) {
-            llego = false;
+        if ((titulo.includes(filtro) || marca.includes(filtro)) && (marcaSeleccionada === "" || marca === marcaSeleccionada)) {
+            producto.style.display = "grid";
+            producto.classList.remove("oculto");
+            hayResultados = true;
+        } else {
+            producto.style.display = "none";
+            producto.classList.add("oculto");
         }
+    });
 
-        scrollPosition = llego ? scrollPosition - 1 : scrollPosition + 1;
-        container.scrollLeft = scrollPosition;
+    if (sinResultados) {
+        sinResultados.style.display = hayResultados ? "none" : "block";
     }
 
-    function startAutoScroll() {
-        clearInterval(scrollInterval);
-        scrollInterval = setInterval(autoScroll, 20);
-    }
-    function startAutoScroll2() {
-        clearInterval(scrollInterval);
-        scrollInterval = setInterval(autoScroll, 10000);
-    }
-    function stopAutoScroll() {
-        clearInterval(scrollInterval);
-        clearTimeout(timeoutId);
-        timeoutId = setTimeout(startAutoScroll, 5000);
-    }
+    actualizarBotonVerMas();
+}
 
-    startAutoScroll();
+function actualizarBotonVerMas() {
+    const botonVerMas = document.getElementById('vermas');
+    const productosOcultos = document.querySelectorAll(".listaproductos .producto.oculto");
+    const productosVisibles = document.querySelectorAll(".listaproductos .producto[style*='display: grid']");
+    
+    if (productosOcultos.length === 0 || productosVisibles.length === 0) {
+        botonVerMas.style.display = "none";
+    } else {
+        botonVerMas.style.display = "block";
+    }
+}
 
-    container.addEventListener("touchstart", stopAutoScroll, { passive: true });
-    container.addEventListener("touchend", startAutoScroll2, { passive: true });
-    container.addEventListener("mouseenter", stopAutoScroll);
-    container.addEventListener("mouseleave", startAutoScroll2);
-});
-*/
+document.getElementById("buscar").addEventListener("input", actualizarVisibilidadProductos);
+document.getElementById("marcasbuscar").addEventListener("change", actualizarVisibilidadProductos);
+

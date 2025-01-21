@@ -1,0 +1,77 @@
+<div class="custom-select">
+    <div class="selected-option" id="selectedOption" style="background-image: url('ruta-a-imagen/default.jpg');"></div>
+    <div class="options-list" id="optionsList">
+        <div class="option" data-value="starlink" style="background-image: url('recursos/MARCAS/aruba.svg');"></div>
+        <div class="option" data-value="mikrotik" style="background-image: url('recursos/MARCAS/aruba.svg');"></div>
+    </div>
+</div>
+<input type="hidden" id="filtroMarca" value="">
+
+
+<script>
+    document.getElementById("selectedOption").addEventListener("click", function () {
+        document.getElementById("optionsList").style.display = "block";
+    });
+
+    document.querySelectorAll(".option").forEach(option => {
+        option.addEventListener("click", function () {
+            let selected = document.getElementById("selectedOption");
+            let filtroMarca = document.getElementById("filtroMarca");
+
+            selected.style.backgroundImage = this.style.backgroundImage;
+            filtroMarca.value = this.getAttribute("data-value");
+
+            document.getElementById("optionsList").style.display = "none";
+            document.getElementById("buscar").dispatchEvent(new Event("input"));
+        });
+    });
+
+    document.addEventListener("click", function (event) {
+        if (!document.querySelector(".custom-select").contains(event.target)) {
+            document.getElementById("optionsList").style.display = "none";
+        }
+    });
+
+</script>
+<style>
+    .custom-select {
+    position: relative;
+    width: 150px;
+    cursor: pointer;
+}
+
+.selected-option {
+    width: 100%;
+    height: 40px;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #ccc;
+}
+
+.options-list {
+    display: none;
+    position: absolute;
+    width: 100%;
+    border: 1px solid #ccc;
+    background: white;
+    z-index: 1000;
+}
+
+.option {
+    background-color: black;
+    width: 100%;
+    height: 40px;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.option:last-child {
+    border-bottom: none;
+}
+
+.option:hover {
+    filter: brightness(80%);
+}
+
+</style>
