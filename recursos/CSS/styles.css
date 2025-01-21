@@ -213,7 +213,7 @@ button, a{
     ". TIT . ."max-content
     ". TXT TXT ." max-content
     ". . . ."auto/
-    10vw 80vh 15% auto;
+    10vw 80vh 5% auto;
 }
 .texto{
     font-size: 3vh;
