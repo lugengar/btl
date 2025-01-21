@@ -13,7 +13,7 @@ function renderConfiguracion(info) {
     const producto = document.getElementById('producto');
     const h1 = document.createElement('h1');
     const p = document.createElement('p');
-    
+    producto.style.backgroundPosition = config.posicionimagen
     producto.style.backgroundImage = `url(${config.ubicacioncarpeta+config.imagenprincipal})`;
     
     h1.textContent = config.titulo;

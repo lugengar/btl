@@ -3,6 +3,7 @@
     {
         "ubicacioncarpeta": "recursos/PRODUCTOS/",
         "imagenprincipal": "imagen3.webp",
+        "posicionimagen": "bottom",
         "titulo": "TODO PARA TU NEGOCIO",
         "texto": "En BTL Solutions, ofrecemos una amplia gama de productos de alta calidad para el diseño y la infraestructura de redes. Trabajamos con soluciones de talla empresarial, utilizando equipos y tecnologías de marcas reconocidas a nivel mundial, que destacan por su fiabilidad, rendimiento y soporte técnico continuo. Estas marcas están enfocadas en ofrecer máxima seguridad y eficiencia, garantizando redes robustas y escalables que responden a las necesidades más exigentes. Nuestro compromiso es proporcionar los mejores productos del mercado, combinados con un servicio personalizado, para asegurar el óptimo funcionamiento y la protección de las redes de nuestros clientes"
     },
