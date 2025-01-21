@@ -8,18 +8,18 @@
         "imagen": "servicio1.jpg",
         "posicionimagen": "left",
         "titulo": "SERVICIO EMPRESARIAL",
-        "texto": "Diseño y mantenimiento de infraestructura de red con soporte remoto y/o visitas programas para resolución de incidencias en sitio, servicio de guardia ante incidencias y servicio de instalación y administración de cámaras en nube."
+        "texto": "Diseño y mantenimiento de infraestructura de red con soporte remoto y/o visitas programadas para resolución de incidencias en sitio, servicio de guardia ante incidencias y servicio de instalación y administración de cámaras en nube."
     },
     {
         "imagen": "servicio2.jpg",
         "posicionimagen": "center",
         "titulo": "SERVICIO ITINERANTE",
-        "texto": "El servicio itinerante de Starlink permite la Conexión a Internet donde quieras que estés y en movimiento (hasta 160km/h). Instalación de equipo externa y gestión del servicio itinerante con la empresa Starlink."
+        "texto": "El servicio itinerante de Starlink permite la conexión a Internet donde quieras que estés y en movimiento (hasta 160 km/h). Instalación de equipo externo y gestión del servicio itinerante con la empresa Starlink."
     },
     {
         "imagen": "servicio3.jpg",
         "posicionimagen": "18%",
         "titulo": "SERVICIO MARÍTIMO",
-            "texto": "A diferencia del itinerante el servicio marítimo amplía las distancia de cobertura más allá de la costa, permitiendo la conexión aún en la embarcación profunda. Ideal para botes pesqueros o vehículos recreativos como yates que deseen una conexión estable como en casa."
+            "texto": "A diferencia del itinerante, el servicio marítimo amplía las distancia de cobertura más allá de la costa, permitiendo la conexión aún en la embarcación profunda. Ideal para botes pesqueros o vehículos recreativos, como yates, que deseen una conexión estable como en casa."
     }
 ]}
