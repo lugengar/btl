@@ -24,6 +24,7 @@ function generateHTML(info) {
     const a = document.createElement('a');
     a.classList.add('correo');
     a.style.backgroundImage = `url(${ubicacioncarpeta+item.image})`;
+    a.onclick = copiarAlPortapapeles.bind(null, a);
     a.textContent = item.url;
     atencionContainer.appendChild(a);
   });
@@ -31,10 +32,23 @@ function generateHTML(info) {
   ubicacion.forEach(item => {
     const a = document.createElement('a');
     a.classList.add('correo');
-    a.style.backgroundImage = `url(${item.image})`;
+    a.style.backgroundImage = `url(${ubicacioncarpeta+item.image})`;
+    a.onclick = copiarAlPortapapeles.bind(null, a);
     a.textContent = item.url;
     ubicacionContainer.appendChild(a);
   });
+}
+function copiarAlPortapapeles(enlace) {
+  const texto = enlace.textContent;
+
+  const tempInput = document.createElement('input');
+  document.body.appendChild(tempInput);
+  tempInput.value = texto;  
+  tempInput.select();  
+  document.execCommand('copy');  
+  document.body.removeChild(tempInput); 
+
+  alert('Texto copiado al portapapeles: ' + texto);
 }
 
 fetchData();

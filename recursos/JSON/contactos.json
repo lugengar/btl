@@ -5,6 +5,11 @@
   },
   "imagenes":[
     {
+      "image": "telefono.svg",
+      "url": "+54 11 2394-6762",
+      "tipo": "atencion"
+    },
+    {
       "image": "carta.svg",
       "url": "soporte@btl-solutions.com.ar",
       "tipo": "atencion"
@@ -13,6 +18,11 @@
       "image": "carta.svg",
       "url": "reclamos@bot-solutions.com.ar",
       "tipo": "atencion"
+    },
+    {
+      "image": "telefono.svg",
+      "url": "+54 11 2394-6762",
+      "tipo": "ubicacion"
     },
     {
       "image": "carta.svg",
