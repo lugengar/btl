@@ -1,4 +1,4 @@
-function isElementInViewport(el, offset = 100) { 
+function isElementInViewport(el, offset = 200) { 
     const rect = el.getBoundingClientRect();
     return (
         rect.top >= -offset &&
