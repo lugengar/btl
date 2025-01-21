@@ -24,7 +24,7 @@ body{
 }
 p,a{
     grid-area: TXT;
-    text-shadow: 1vh 1vh 2vh rgba(0, 0, 0, 0.5);
+    text-shadow: 0vh 0vh 2vh rgba(0, 0, 0, 0.849);
     font-size: 2.5vh;
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -42,7 +42,7 @@ a {
 
 }
 h1 {
-    text-shadow: 1vh 1vh 2vh rgba(0, 0, 0, 0.5);
+    text-shadow: 0vh 0vh 2vh rgba(0, 0, 0, 0.849);
     grid-area: TIT;
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -184,7 +184,7 @@ button, a{
     position: absolute;
     left: 0;
     top: 0;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.719), transparent,rgba(0, 0, 0, 0.719)); 
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.719), transparent, transparent,rgba(0, 0, 0, 0.719)); 
 }
 .filtro2 {
     pointer-events: none;
@@ -193,7 +193,7 @@ button, a{
     position: absolute;
     left: 0;
     top: 0;
-    background: linear-gradient(to left, rgba(0, 0, 0, 0.719), transparent); 
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.719), transparent, transparent); 
 }
 .textos {
     pointer-events: none;
@@ -232,7 +232,7 @@ button, a{
 
     
 .boton-control{
-    text-shadow: 1vh 1vh 1vh rgb(0, 0, 0);
+    text-shadow: 0vh 0vh 2vh rgba(0, 0, 0, 0.849);
     mix-blend-mode: difference;
     width: 10vh;
     height: 5vh;
@@ -592,6 +592,7 @@ background-image: url();
 }
 
 #contacto{
+    position: relative;
     padding-top: 8vh;
     min-height: 100vh;
     background-position: center;
