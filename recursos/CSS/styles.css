@@ -232,7 +232,7 @@ button, a{
 
     
 .boton-control{
-    mix-blend-mode: difference;
+    /* mix-blend-mode: difference; */
     width: 10vh;
     height: 5vh;
     background-color: transparent;
