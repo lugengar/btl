@@ -25,7 +25,7 @@ body{
 p,a{
     grid-area: TXT;
     text-shadow: 1vh 1vh 2vh rgba(0, 0, 0, 0.5);
-
+    font-size: 3vh;
     word-wrap: break-word;
     overflow-wrap: break-word;
     margin: 0;
@@ -36,6 +36,7 @@ p,a{
     color: white;
 }
 a {
+    font-size: 2vh;
    
     color: rgb(123, 36, 223);
 
@@ -73,6 +74,8 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder { color: white; }
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: white; }
 input::-moz-placeholder, textarea::-moz-placeholder { color: white; } 
 input, textarea, option, select{
+    outline: none;
+    border-radius: 0%;
     padding: 0;
     margin: 0;
     resize: none;
@@ -553,6 +556,7 @@ background-image: url();
     padding: 1vh;
 }
 #marcasbuscar{
+    padding: 0.5vh;
     gap: 2vh;
     margin-top: 2vh;
     margin-bottom: 1vh;
