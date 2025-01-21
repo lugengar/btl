@@ -232,12 +232,13 @@ button, a{
 
     
 .boton-control{
-    /* mix-blend-mode: difference; */
+    text-shadow: 1vh 1vh 1vh rgb(0, 0, 0);
+    mix-blend-mode: difference;
     width: 10vh;
     height: 5vh;
     background-color: transparent;
     border: none;
-    color: rgba(255, 255, 255, 0.747);
+    color: rgb(255, 255, 255);
     font-size: 5vh;
 }
 .controles {
@@ -360,8 +361,8 @@ background-image: url();
     position: relative;
     min-height: 100vh;
     overflow: hidden;
-    background-size: 180vh;
-    background-position: -15vh -15vh;
+    background-size: 220vh;
+    background-position: center;
     grid-area: SER;
     display: grid;
     grid-template: 
@@ -547,8 +548,8 @@ background-image: url();
     padding-top: 5vh;
     padding-bottom: 5vh;
     min-height: 100vh;
-    background-size: 190vh;
-    background-position: -15vh -15vh;
+    background-size: 250vh;
+    background-position: center;
     grid-area: PRS;
     display: grid;
     grid-template: 
@@ -643,8 +644,8 @@ background-image: url();
     padding-left: 5vh;
 }
 #footer{
-    background-size: 200vh;
-    background-position: 50% 40vh;
+    background-size: cover;
+    background-position: center;
     grid-area: FOO;
     display: grid;
     padding: 2vh;
