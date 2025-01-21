@@ -5,7 +5,7 @@
         "imagenprincipal": "imagen3.webp",
         "posicionimagen": "bottom",
         "titulo": "TODO PARA TU NEGOCIO",
-        "texto": "En BTL Solutions, ofrecemos una amplia gama de productos de alta calidad para el diseño y la infraestructura de redes. Trabajamos con soluciones de talla empresarial, utilizando equipos y tecnologías de marcas reconocidas a nivel mundial, que destacan por su fiabilidad, rendimiento y soporte técnico continuo. Estas marcas están enfocadas en ofrecer máxima seguridad y eficiencia, garantizando redes robustas y escalables que responden a las necesidades más exigentes. Nuestro compromiso es proporcionar los mejores productos del mercado, combinados con un servicio personalizado, para asegurar el óptimo funcionamiento y la protección de las redes de nuestros clientes"
+        "texto": "En BTL Solutions, ofrecemos una amplia gama de productos de alta calidad para el diseño y la infraestructura de redes. Trabajamos con soluciones de talla empresarial, utilizando equipos y tecnologías de marcas reconocidas a nivel mundial, que destacan por su fiabilidad, rendimiento y soporte técnico continuo. Estas marcas están enfocadas en ofrecer máxima seguridad y eficiencia, garantizando redes robustas y escalables que responden a las necesidades más exigentes. Nuestro compromiso es proporcionar los mejores productos del mercado, combinados con un servicio personalizado, para asegurar el óptimo funcionamiento y la protección de las redes de nuestros clientes."
     },
     "imagenes": [
         {
@@ -13,28 +13,28 @@
             "marca": "STARLINK",
             "posicionimagen": "top",
             "titulo": "STARLINK MINI",
-            "texto": "El Starlink mini es compacto e ideal para el servicio itinerante en movimiento, y el Starlink V4 es el equipo más reciente lanzado por la compañía preparado para soportar la carga de una red empresarial."
+            "texto": "El Starlink Mini es compacto e ideal para el servicio itinerante en movimiento, mientras que el Starlink V4 es el equipo más reciente lanzado por la compañía preparado para soportar la carga de una red empresarial."
         },
         {
             "imagen": "mikrotik.png",
             "marca": "MIKROTIK",
             "posicionimagen": "top",
             "titulo": "ROUTER MIKROTIK",
-            "texto": "Somos especialistas en Routers Mikrotik y conocemos a detalle cada uno de sus beneficios, como la construcción de una red robusta, ampliamente personalizable y segura con reglas de Firewall y VPN. Ideales para una infraestructura de red de graado empresarial."
+            "texto": "Somos especialistas en Routers Mikrotik y conocemos a detalle cada uno de sus beneficios, como la construcción de una red robusta, ampliamente personalizable y segura con reglas de Firewall y VPN. Ideales para una infraestructura de red de grado empresarial."
         },
         {
             "imagen": "aruba.jpg",
             "marca": "ARUBA",
             "posicionimagen": "top",
-            "titulo": "ACCES POINT ARUBA",
-            "texto": "Los Access point de HP línea Aruba, son conocidos por sus altas velocidades con wi-fi 6 y la incorporación de protocolos de seguridad más recientes e innovadores del mercado, además de una amplia personalización y gestión de múltiples usuarios simultáneos a través de distintas redes."
+            "titulo": "ACCESS POINT ARUBA",
+            "texto": "Los Access point de HP línea Aruba, son conocidos por sus altas velocidades con Wi-Fi 6 y la incorporación de protocolos de seguridad más recientes e innovadores del mercado, además de una amplia personalización y gestión de múltiples usuarios simultáneos a través de distintas redes."
         },
         {
             "imagen": "pc.webp",
             "marca": "",
             "posicionimagen": "top",
             "titulo": "COTIZACIÓN DE PC PERSONALIZADA",
-                "texto": "Realizamos cotizaciones de equipos a medida para tu empresa, equipos armados con sistema operativo instalado y preconfigurado para una incorporación inmediata a su estación de trabajo"
+                "texto": "Realizamos cotizaciones de equipos a medida para tu empresa, equipos armados con sistema operativo instalado y preconfigurado para una incorporación inmediata a su estación de trabajo."
         }
     ]
 }
