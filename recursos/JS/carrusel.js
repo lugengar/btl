@@ -1,17 +1,16 @@
-fetch('recursos/JSON/carrusel.json')
+fetch('recursos/JSON/super.json')
 .then(respuesta => respuesta.json())
 .then(info => {
-    ubicacioncarpeta = info.configuracion.ubicacioncarpeta
-    datos = info.imagenes
+    ubicacioncarpeta = info.carrusel.configuracion.ubicacioncarpeta
+    datos = info.carrusel.imagenes
     let intervalo;
     const carrusel = document.querySelector(".imagenes");
     const controles = document.querySelector(".controles");
     const textos = document.querySelector(".textos");
     const contenedorIndicadores = document.querySelector(".indicadores");
-    var segundosespera = info.configuracion.segundosespera
-    var animaciontexto = info.configuracion.animaciontexto
+    var segundosespera = info.carrusel.configuracion.segundosespera
 
-    let imagenes = [...info.imagenes];
+    let imagenes = [...info.carrusel.imagenes];
 
     imagenes.unshift(imagenes[imagenes.length - 1]);
     imagenes.push(imagenes[1]);

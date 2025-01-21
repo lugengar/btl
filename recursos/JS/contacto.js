@@ -1,10 +1,10 @@
 function fetchData() {
   
-  fetch('recursos/JSON/contactos.json')
+  fetch('recursos/JSON/super.json')
     .then(response => response.json())
     .then(data => {
       
-      generateHTML(data);
+      generateHTML(data.contactos);
     })
     .catch(error => {
       console.error('Error al cargar los datos:', error);

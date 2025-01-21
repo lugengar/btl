@@ -1,0 +1,246 @@
+{
+    "carrusel": {
+        "configuracion": {
+            "segundosespera": 15,
+            "ubicacioncarpeta": "recursos\/CARRUSEL\/"
+        },
+        "imagenes": [
+            {
+                "imagen": "imagen2.jpg",
+                "posicionimagen": "center",
+                "titulo": "\u00bfPOR QU\u00c9 BTL?",
+                "texto": "BTL Solutions ofrece un servicio integral con redes a medida, alquiler de equipos, administraci\u00f3n de servidores y backups en la nube, adem\u00e1s de instalaci\u00f3n de c\u00e1maras y servicio de guardia, asegurando seguridad y continuidad para tu empresa."
+            },
+            {
+                "imagen": "imagen4.jpg",
+                "posicionimagen": "bottom",
+                "titulo": "STARLINK",
+                "texto": "Starlink, junto con routers Mikrotik y puntos de acceso Aruba, ofrece una conexi\u00f3n r\u00e1pida, confiable y de alto rendimiento, ideal para \u00e1reas remotas. Esta combinaci\u00f3n garantiza una red estable y productiva para tu negocio. Solicita cotizaci\u00f3n en nuestra p\u00e1gina."
+            },
+            {
+                "imagen": "imagen3.jpg",
+                "posicionimagen": "18%",
+                "titulo": "SOPORTE",
+                "texto": "BTL Solutions ofrece soporte personalizado con asistencia remota r\u00e1pida y eficiente, servicio de guardia 24\/7, y visitas programadas para optimizar la red y prevenir fallos, incluyendo resoluci\u00f3n de incidencias nivel 1 en sitio."
+            }
+        ]
+    },
+    "contactos": {
+        "configuracion": {
+            "ubicacioncarpeta": "recursos\/SVG\/"
+        },
+        "imagenes": [
+            {
+                "image": "telefono.svg",
+                "url": "+54 11 2394-6762",
+                "tipo": "atencion"
+            },
+            {
+                "image": "carta.svg",
+                "url": "soporte@btl-solutions.com.ar",
+                "tipo": "atencion"
+            },
+            {
+                "image": "carta.svg",
+                "url": "reclamos@bot-solutions.com.ar",
+                "tipo": "atencion"
+            },
+            {
+                "image": "telefono.svg",
+                "url": "+54 11 2394-6762",
+                "tipo": "ubicacion"
+            },
+            {
+                "image": "carta.svg",
+                "url": "info@btl-solutions.com",
+                "tipo": "ubicacion"
+            },
+            {
+                "image": "carta.svg",
+                "url": "administracion@btl.com.ar",
+                "tipo": "ubicacion"
+            }
+        ]
+    },
+    "marcas": {
+        "configuracion": {
+            "ubicacioncarpeta": "recursos\/MARCAS\/"
+        },
+        "imagenes": [
+            {
+                "image": "starlink.svg",
+                "nombre": "STARLINK",
+                "tama\u00f1oespecial": ""
+            },
+            {
+                "image": "aruba.svg",
+                "nombre": "ARUVA",
+                "tama\u00f1oespecial": ""
+            },
+            {
+                "image": "mikrotik.svg",
+                "nombre": "MIKROTIK",
+                "tama\u00f1oespecial": "30vh"
+            },
+            {
+                "image": "cisco.svg",
+                "nombre": "CISCO",
+                "tama\u00f1oespecial": "20vh"
+            },
+            {
+                "image": "hp.svg",
+                "nombre": "HP",
+                "tama\u00f1oespecial": "12vh"
+            },
+            {
+                "image": "lenovo.svg",
+                "nombre": "LENOVO",
+                "tama\u00f1oespecial": ""
+            },
+            {
+                "image": "asus.svg",
+                "nombre": "ASUS",
+                "tama\u00f1oespecial": "20vh"
+            }
+        ]
+    },
+    "productos": {
+        "configuracion": {
+            "ubicacioncarpeta": "recursos\/PRODUCTOS\/",
+            "imagenprincipal": "imagen3.webp",
+            "posicionimagen": "bottom",
+            "titulo": "TODO PARA TU NEGOCIO",
+            "texto": "En BTL Solutions, ofrecemos una amplia gama de productos de alta calidad para el dise\u00f1o y la infraestructura de redes. Trabajamos con soluciones de talla empresarial, utilizando equipos y tecnolog\u00edas de marcas reconocidas a nivel mundial, que destacan por su fiabilidad, rendimiento y soporte t\u00e9cnico continuo. Estas marcas est\u00e1n enfocadas en ofrecer m\u00e1xima seguridad y eficiencia, garantizando redes robustas y escalables que responden a las necesidades m\u00e1s exigentes. Nuestro compromiso es proporcionar los mejores productos del mercado, combinados con un servicio personalizado, para asegurar el \u00f3ptimo funcionamiento y la protecci\u00f3n de las redes de nuestros clientes"
+        },
+        "imagenes": [
+            {
+                "imagen": "starlinkmini.webp",
+                "marca": "STARLINK",
+                "posicionimagen": "top",
+                "titulo": "STARLINK MINI",
+                "texto": "El Starlink mini es compacto e ideal para el servicio itinerante en movimiento, y el Starlink V4 es el equipo m\u00e1s reciente lanzado por la compa\u00f1\u00eda preparado para soportar la carga de una red empresarial."
+            },
+            {
+                "imagen": "mikrotik.png",
+                "marca": "MIKROTIK",
+                "posicionimagen": "top",
+                "titulo": "ROUTER MIKROTIK",
+                "texto": "Somos especialistas en Routers Mikrotik y conocemos a detalle cada uno de sus beneficios, como la construcci\u00f3n de una red robusta, ampliamente personalizable y segura con reglas de Firewall y VPN. Ideales para una infraestructura de red de graado empresarial."
+            },
+            {
+                "imagen": "aruba.jpg",
+                "marca": "ARUBA",
+                "posicionimagen": "top",
+                "titulo": "ACCES POINT ARUBA",
+                "texto": "Los Access point de HP l\u00ednea Aruba, son conocidos por sus altas velocidades con wi-fi 6 y la incorporaci\u00f3n de protocolos de seguridad m\u00e1s recientes e innovadores del mercado, adem\u00e1s de una amplia personalizaci\u00f3n y gesti\u00f3n de m\u00faltiples usuarios simult\u00e1neos a trav\u00e9s de distintas redes."
+            },
+            {
+                "imagen": "pc.webp",
+                "marca": "",
+                "posicionimagen": "top",
+                "titulo": "COTIZACI\u00d3N DE PC PERSONALIZADA",
+                "texto": "Realizamos cotizaciones de equipos a medida para tu empresa, equipos armados con sistema operativo instalado y preconfigurado para una incorporaci\u00f3n inmediata a su estaci\u00f3n de trabajo"
+            },
+            {
+                "titulo": "aaaaa",
+                "texto": "aaaaaaaaa",
+                "imagen": "aa.jpg",
+                "marca": "starlink",
+                "posicionimagen": "left"
+            },
+            {
+                "titulo": "aaaaa",
+                "texto": "aaaaaaaaa",
+                "imagen": "aa.jpg",
+                "marca": "starlink",
+                "posicionimagen": "left"
+            },
+            {
+                "titulo": "aaaaa",
+                "texto": "aaaaaaaaa",
+                "imagen": "aa.jpg",
+                "marca": "starlink",
+                "posicionimagen": "left"
+            },
+            {
+                "titulo": "aaaaa",
+                "texto": "aaaaaaaaa",
+                "imagen": "aa.jpg",
+                "marca": "starlink",
+                "posicionimagen": "left"
+            },
+            {
+                "titulo": "aaaaa",
+                "texto": "aaaaaaaaa",
+                "imagen": "aa.jpg",
+                "marca": "starlink",
+                "posicionimagen": "left"
+            },
+            {
+                "titulo": "aaaaa",
+                "texto": "aaaaaaaaa",
+                "imagen": "aa.jpg",
+                "marca": "starlink",
+                "posicionimagen": "left"
+            },
+            {
+                "titulo": "aaaaa",
+                "texto": "aaaaaaaaa",
+                "imagen": "aa.jpg",
+                "marca": "starlink",
+                "posicionimagen": "left"
+            }
+        ]
+    },
+    "redes": {
+        "configuracion": {
+            "ubicacioncarpeta": "recursos\/SVG\/"
+        },
+        "imagenes": [
+            {
+                "image": "whats.svg",
+                "url": "https:\/\/wa.me\/541123946762"
+            },
+            {
+                "image": "face.svg",
+                "url": ""
+            },
+            {
+                "image": "insta.svg",
+                "url": ""
+            },
+            {
+                "image": "link.svg",
+                "url": ""
+            }
+        ]
+    },
+    "servicios": {
+        "configuracion": {
+            "ubicacioncarpeta": "recursos\/SERVICIOS\/"
+        },
+        "imagenes": [
+            {
+                "imagen": "servicio1.jpg",
+                "posicionimagen": "left",
+                "titulo": "SERVICIO EMPRESARIAL",
+                "texto": "Dise\u00f1o y mantenimiento de infraestructura de red con soporte remoto y\/o visitas programas para resoluci\u00f3n de incidencias en sitio, servicio de guardia ante incidencias y servicio de instalaci\u00f3n y administraci\u00f3n de c\u00e1maras en nube."
+            },
+            {
+                "imagen": "servicio2.jpg",
+                "posicionimagen": "center",
+                "titulo": "SERVICIO ITINERANTE",
+                "texto": "El servicio itinerante de Starlink permite la Conexi\u00f3n a Internet donde quieras que est\u00e9s y en movimiento (hasta 160km\/h). Instalaci\u00f3n de equipo externa y gesti\u00f3n del servicio itinerante con la empresa Starlink."
+            },
+            {
+                "imagen": "servicio3.jpg",
+                "posicionimagen": "18%",
+                "titulo": "SERVICIO MAR\u00cdTIMO",
+                "texto": "A diferencia del itinerante el servicio mar\u00edtimo ampl\u00eda las distancia de cobertura m\u00e1s all\u00e1 de la costa, permitiendo la conexi\u00f3n a\u00fan en la embarcaci\u00f3n profunda. Ideal para botes pesqueros o veh\u00edculos recreativos como yates que deseen una conexi\u00f3n estable como en casa."
+            }
+        ]
+    },
+    "video": {
+        "url": "https:\/\/www.youtube.com\/embed\/y47Htq3Ol2c?si=cg-ouPmtVw1mbZg0&amp;controls=0"
+    }
+}

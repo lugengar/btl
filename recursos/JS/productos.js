@@ -1,8 +1,8 @@
-fetch('recursos/JSON/productos.json')
+fetch('recursos/JSON/super.json')
     .then(response => response.json())
     .then(data => {
-        renderConfiguracion(data);
-        renderProductos(data);
+        renderConfiguracion(data.productos);
+        renderProductos(data.productos);
     })
     .catch(error => {
         console.error('Error al cargar el archivo JSON:', error);

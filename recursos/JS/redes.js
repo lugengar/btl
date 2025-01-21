@@ -1,8 +1,8 @@
-fetch('recursos/JSON/redes.json') 
+fetch('recursos/JSON/super.json') 
     .then(response => response.json())
     .then(info => {
-        ubicacioncarpeta = info.configuracion.ubicacioncarpeta
-        data = info.imagenes
+        ubicacioncarpeta = info.redes.configuracion.ubicacioncarpeta
+        data = info.redes.imagenes
         const listaredes = document.querySelector('.listaredes');
         
         data.forEach(servicio => {

@@ -1,8 +1,8 @@
-fetch('recursos/JSON/marcas.json')
+fetch('recursos/JSON/super.json')
     .then(response => response.json())
     .then(info => {
-        ubicacioncarpeta = info.configuracion.ubicacioncarpeta
-        marcasData = info.imagenes
+        ubicacioncarpeta = info.marcas.configuracion.ubicacioncarpeta
+        marcasData = info.marcas.imagenes
         const marcasContainer = document.getElementById("marcas");
         const marcasContainer2 = document.getElementById("marcasbuscar");
         const totalMarcas = marcasData.length;
