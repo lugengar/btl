@@ -369,10 +369,10 @@ background-image: url();
     ". . ."auto
     ". MIN ." max-content
     ". TIT ." max-content
-    ". SERV . " max-content
+    "SERV SERV SERV" max-content
     ". BOT . " auto 
     ". . . " auto /
-    auto 73vw  auto ;
+    auto 80vw  auto ;
 }
 
 .listaservicios{
@@ -558,10 +558,10 @@ background-image: url();
     ". TIT ." max-content
     ". BUS ." max-content
     ". BUS2 ." max-content
-    ". SERV . " minmax(60vh, max-content)
+    "SERV SERV SERV " minmax(60vh, max-content)
     ". BOT . " auto 
     ". . . " auto /
-    auto 73vw auto ;
+    auto 80vw auto ;
 }
 #buscar{
     grid-area: BUS;

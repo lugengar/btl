@@ -57,7 +57,7 @@ function renderProductos(info) {
         listaProductos.appendChild(item);
     });
 
-    
+    actualizarVisibilidadProductos()
     const botonVerMas = document.getElementById('vermas');
     botonVerMas.addEventListener("click", function () {
         let ocultos = document.querySelectorAll(".listaproductos .producto.oculto");
