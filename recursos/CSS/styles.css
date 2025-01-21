@@ -184,7 +184,7 @@ button, a{
     position: absolute;
     left: 0;
     top: 0;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.719), transparent); 
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.719), transparent,rgba(0, 0, 0, 0.719)); 
 }
 .filtro2 {
     pointer-events: none;
@@ -645,7 +645,7 @@ background-image: url();
 }
 #footer{
     background-size: cover;
-    background-position: center;
+    background-position: 50% 20vh;
     grid-area: FOO;
     display: grid;
     padding: 2vh;
