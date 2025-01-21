@@ -645,7 +645,7 @@ background-image: url();
 }
 #footer{
     background-size: cover;
-    background-position: center;
+    background-position: 50% 20vh;
     grid-area: FOO;
     display: grid;
     padding: 2vh;
