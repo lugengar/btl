@@ -539,7 +539,12 @@ background-image: url();
     ". . . " auto /
     auto 70vh 5vw  ;
 }
-
+#sinResultados{
+    background-position: center;
+    background-size: contain;
+    height: 40vh;
+    background-repeat: no-repeat;
+}
 #producto p{
     padding: 1vh;
     border: 0.05vh solid white;
