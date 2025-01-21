@@ -15,15 +15,15 @@
       "tipo": "atencion"
     },
     {
-        "image": "carta.svg",
-        "url": "info@btl-solutions.com",
-        "tipo": "ubicacion"
-      },
-      {
-          "image": "carta.svg",
-          "url": "administracion@btl.com.ar",
-          "tipo": "ubicacion"
-        }
-                
+      "image": "carta.svg",
+      "url": "info@btl-solutions.com",
+      "tipo": "ubicacion"
+    },
+    {
+      "image": "carta.svg",
+      "url": "administracion@btl.com.ar",
+      "tipo": "ubicacion"
+    }
+            
 ]
 }
