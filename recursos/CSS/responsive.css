@@ -79,7 +79,7 @@
         grid-area: SER;
         display: grid;
         grid-template: 
-        ". . ."auto
+        ". . ."2vh
         ". MIN ." max-content
         ". TIT ." max-content
         "SERV SERV SERV " max-content
@@ -111,7 +111,7 @@
         grid-area: PRS;
         display: grid;
         grid-template: 
-        ". . ."auto
+        ". . ."5vh
         ". MIN ." max-content
         ". TIT ." max-content
         ". BUS ." max-content
