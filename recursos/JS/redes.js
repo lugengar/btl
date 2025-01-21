@@ -25,3 +25,10 @@ fetch('recursos/JSON/redes.json')
     })
     .catch(error => console.error('Error cargando el JSON:', error));
 
+/*
+,
+    {
+      "image": "link.svg",
+      "url": ""
+    } 
+*/

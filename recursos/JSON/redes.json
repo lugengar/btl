@@ -1,3 +1,4 @@
+
 {
   "configuracion": 
   {
@@ -10,15 +11,11 @@
     },
     {
       "image": "face.svg",
-      "url": ""
+      "url": " https://www.facebook.com/profile.php?id=61572001088519"
     },
     {
       "image": "insta.svg",
-      "url": ""
-    },
-    {
-      "image": "link.svg",
-      "url": ""
+      "url": "https://www.instagram.com/btl.solutions.ar/"
     }
                 
   ]
