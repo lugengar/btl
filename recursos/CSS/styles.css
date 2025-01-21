@@ -430,7 +430,7 @@ background-image: url();
     "TXT" auto
     "BOT"max-content
     "TIT" max-content/
-    45vh ;
+    auto ;
 }
 
 .producto h1{
