@@ -781,6 +781,6 @@ grid-area: REDE;
     animation: show 0.6s ease-out forwards;
 }
 
-.producto, .servicio, .titulo, .inputs, #producto h1, #producto p, .botonegro, .minitexto, #servicios .titulo {
+.producto,.cuadro, .servicio, .titulo, .inputs, #producto h1, #producto p, .botonegro, .minitexto, #servicios .titulo {
     opacity: 0;
 }
