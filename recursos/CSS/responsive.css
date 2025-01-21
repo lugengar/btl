@@ -70,6 +70,7 @@
         2% auto  2%;
     }
     #servicios{
+        padding-top: 10vh;
         min-height: 90vh;
         overflow: hidden;
         background-size: 180vh;

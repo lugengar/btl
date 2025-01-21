@@ -355,7 +355,7 @@ background-image: url();
     background-attachment: fixed;
 }
 #servicios{
-    padding-top: 5vh;
+    padding-top: 10vh;
     position: relative;
     min-height: 100vh;
     overflow: hidden;
@@ -518,6 +518,7 @@ background-image: url();
 
 }
 #producto{
+    padding-top: 2vh;
     min-height: 80vh;
     background-position: center;
     background-size: cover;
