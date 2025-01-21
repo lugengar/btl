@@ -366,7 +366,7 @@ background-image: url();
     grid-area: SER;
     display: grid;
     grid-template: 
-    ". . ."auto
+    ". . ."5vh
     ". MIN ." max-content
     ". TIT ." max-content
     "SERV SERV SERV" max-content
