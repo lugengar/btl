@@ -48,7 +48,7 @@ function renderProductos(info) {
         item.classList.add('producto');
         h3.classList.add('minititulo');
         item.setAttribute("data-marca", producto.marca);
-        item.innerHTML = `<button class="botonegro" onclick="consultar('producto','${producto.titulo}')">CONSULTAR PRECIO</button>`;
+        item.innerHTML = `<button class="botonegro" onclick="consultar('producto','${producto.titulo}')">CONSULTAR COTIZACIÓN</button>`;
         item.style.backgroundImage = `url(${ubicacioncarpeta+producto.imagen})`;
         item.style.backgroundPosition = producto.posicionimagen;
         item.appendChild(divBlur);
