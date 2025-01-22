@@ -74,8 +74,8 @@
         padding-top: 10vh;
         min-height: 90vh;
         overflow: hidden;
-        background-size: 180vh;
-        background-position: -15vh -15vh;
+        background-size: 220vh;
+        background-position: center;
         grid-area: SER;
         display: grid;
         grid-template: 
@@ -107,7 +107,7 @@
     }
     #productos{
         min-height: 90vh;
-        background-size: 150vh;
+        background-size: 200vw;
         grid-area: PRS;
         display: grid;
         grid-template: 
