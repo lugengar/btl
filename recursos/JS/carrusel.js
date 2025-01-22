@@ -18,9 +18,12 @@ fetch('recursos/JSON/carrusel.json')
 
     imagenes.forEach((item, indice) => {
         const slide = document.createElement("div");
+        const filtro4 = document.createElement("div");
         const titulo = document.createElement("h1");
         const texto = document.createElement("p");
         slide.classList.add("imagen");
+        filtro4.classList.add("filtro4");
+
         slide.style.left = `${indice * 100}%`;
         slide.style.backgroundImage = `url(${ubicacioncarpeta+item.imagen})`;
         slide.style.backgroundPosition = item.posicionimagen;
@@ -29,6 +32,8 @@ fetch('recursos/JSON/carrusel.json')
         if (indice > 0 && indice < imagenes.length - 1) {
             titulo.textContent=item.titulo
             texto.textContent=item.texto
+        texto.appendChild(filtro4);
+
             textos.appendChild(texto);
             textos.appendChild(titulo);
             const indicador = document.createElement("buttom");
