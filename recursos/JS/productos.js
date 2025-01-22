@@ -103,12 +103,16 @@ function actualizarVisibilidadProductos() {
     });
 
     if (sinResultados) {
-        sinResultados.style.display = hayResultados ? "none" : "block";
+        sinResultados.style.display = hayResultados ? "none" : "grid";
     }
 
     actualizarBotonVerMas();
 }
-
+function eliminarfiltros(){
+    document.getElementById("buscar").value = "";
+    document.getElementById("marcasbuscar").value = "";
+    actualizarVisibilidadProductos()
+}
 function actualizarBotonVerMas() {
     const botonVerMas = document.getElementById('vermas');
     const productosOcultos = document.querySelectorAll(".listaproductos .producto.oculto");
@@ -121,6 +125,6 @@ function actualizarBotonVerMas() {
     }
 }
 
-document.getElementById("buscar").addEventListener("input", actualizarVisibilidadProductos);
-document.getElementById("marcasbuscar").addEventListener("change", actualizarVisibilidadProductos);
+document.getElementById("botbuscar").addEventListener("click", actualizarVisibilidadProductos);
+document.getElementById("volver").addEventListener("click", eliminarfiltros);
 

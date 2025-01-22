@@ -111,16 +111,15 @@
         grid-area: PRS;
         display: grid;
         grid-template: 
-        ". . ."5vh
-        ". MIN ." max-content
-        ". TIT ." max-content
-        ". BUS ." max-content
-        ". BUS2 ." max-content
-        "SERV SERV SERV " minmax(60vh, max-content)
-        
-        ". BOT . " auto 
-        ". . . " auto /
-        2% auto  2%  ;
+        ". . . ."5vh
+        ". MIN MIN ." max-content
+        ". TIT TIT ." max-content
+        ". BUS BOT2." max-content
+        ". BUS2 BUS2." max-content
+        "SERV SERV SERV SERV " minmax(60vh, max-content)
+        ". BOT BOT . " auto 
+        ". . . ." auto /
+        2% auto 10vh 2% ;
     }
 
     .listaservicios{

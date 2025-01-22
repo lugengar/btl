@@ -76,13 +76,18 @@
             <div class="minitexto">PRODUCTOS</div>
             <h1 class="titulo">NUESTROS PRODUCTOS</h1>
             <input type="search" name="" id="buscar" placeholder="BUSCAR PRODUCTO">
+            <button class="botonegro2" id="botbuscar" >BUSCAR</button>
+
             <select id="marcasbuscar">
                 <option value="">ELIJA UNA MARCA</option>
             </select>
             <button class="botonegro" id="vermas" >VER MÁS</button>
 
             <div class="listaproductos">
-                <h1 class="subtitulo" id="sinResultados" style="display: none; background-image: url(recursos/SVG/informatico-05.gif);" >SIN RESULTADOS</h1>
+                <div  id="sinResultados" style="display: none; background-image: url(recursos/SVG/informatico-05.gif);" >
+            <button class="botonegro2" id="volver" >ELIMINAR FILTROS</button>
+                <h1 class="subtitulo">SIN RESULTADOS</h1>
+                </div>
             </div> 
         </section>
         <section id="video">
@@ -99,8 +104,9 @@
                 <input type="email" name="correo" id="" required placeholder="CORREO"> 
                 <select name="asunto" id="asunto" required >
                     <option value="">ASUNTO</option>
-                    <option value="producto">Productos</option>
-                    <option value="servicio">Servicios</option>
+                    <option value="producto">COTIZACIÓN PRODUCTOS</option>
+                    <option value="servicio">COTIZACIÓN SERVICIOS</option>
+                    <option value="otros">OTROS</option>
                 </select>
                 <textarea name="mensaje" id="mensaje" placeholder="MENSAJE"></textarea>
                 <div class="g-recaptcha" data-sitekey="TU_CLAVE_DE_SITIO" data-theme="dark" ></div>

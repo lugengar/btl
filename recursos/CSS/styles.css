@@ -501,6 +501,22 @@ background-image: url();
     justify-content: baseline;
     color: white;
 }
+.botonegro2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    background-color: black;
+    border: 0.05vh solid white;
+    grid-area: BOT2;
+    padding: 1vh;
+    font-family: "Chillax";
+    font-weight: 400;
+    font-size: 2vh;
+    display: flex;
+    justify-content: baseline;
+    color: white;
+}
 .servicio:hover {
     background-size: auto 110%;
 }
@@ -556,10 +572,20 @@ background-image: url();
 }
 #sinResultados{
     background-position: center;
-    background-size: contain;
-    height: 40vh;
+    background-size: 30vh;
+    height: 42vh;
     background-repeat: no-repeat;
+    display: grid;
+    grid-template: 
+    "TIT TIT TIT"auto
+    ". BOT2 ."max-content/
+    auto max-content auto
 }
+#sinResultados h1{
+    font-size: 5vh;
+
+}
+
 #producto p{
     background-color: rgba(0, 0, 0, 0.623);
 backdrop-filter: blur(2vh);
@@ -575,19 +601,20 @@ backdrop-filter: blur(2vh);
     grid-area: PRS;
     display: grid;
     grid-template: 
-    ". . ."5vh
-    ". MIN ." max-content
-    ". TIT ." max-content
-    ". BUS ." max-content
-    ". BUS2 ." max-content
-    "SERV SERV SERV " minmax(60vh, max-content)
-    ". BOT . " auto 
-    ". . . " auto /
-    auto 80vw auto ;
+    ". . . ."5vh
+    ". MIN MIN ." max-content
+    ". TIT TIT ." max-content
+    ". BUS BOT2." max-content
+    ". BUS2 BUS2." max-content
+    "SERV SERV SERV SERV " minmax(60vh, max-content)
+    ". BOT BOT . " auto 
+    ". . . ." auto /
+    auto 75vw 10vh auto ;
 }
 #buscar{
     grid-area: BUS;
     padding: 1vh;
+    margin-right: 2vh;
 }
 #marcasbuscar{
     padding: 0.5vh;
@@ -706,7 +733,7 @@ backdrop-filter: blur(2vh);
     padding-top: 5vh;
     background-color: rgba(0, 0, 0, 0.438);
     border: 0.005vh white solid;
-    width: 40vh;
+    width: 45vh;
     min-height: 30vh;
     height: max-content;
     display: flex;
