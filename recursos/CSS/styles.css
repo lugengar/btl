@@ -220,7 +220,7 @@ button, a{
 }
 .filtro4{
     mix-blend-mode: difference;
-    background-color: rgba(0, 0, 0, 0.74);
+    background-color: rgba(0, 0, 0, 0.5);
     filter: blur(5vh);
     width: 100%;
     height: 100%;
