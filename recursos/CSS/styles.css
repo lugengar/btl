@@ -549,6 +549,8 @@ background-image: url();
     background-repeat: no-repeat;
 }
 #producto p{
+    background-color: rgba(0, 0, 0, 0.623);
+backdrop-filter: blur(2vh);
     padding: 1vh;
     border: 0.05vh solid white;
 }
