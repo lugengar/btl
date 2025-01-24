@@ -844,8 +844,8 @@ grid-area: REDE;
 }
 
 .confetti {
-    width: 10px;
-    height: 20px;
+    width: 1vh;
+    height: 2vh;
     background-color: red;
     position: absolute;
     opacity: 0;
