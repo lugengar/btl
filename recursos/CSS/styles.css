@@ -675,6 +675,7 @@ backdrop-filter: blur(2vh);
     height: 30vh;
 }  
 .grecaptcha-badge{
+    transform: scale(0%);
     display: none;
 }
 #marcas{
