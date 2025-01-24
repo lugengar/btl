@@ -119,7 +119,7 @@
         "SERV SERV SERV SERV " minmax(60vh, max-content)
         ". BOT BOT . " auto 
         ". . . ." auto /
-        2% auto 10vh 2% ;
+        auto 70vw auto auto;
     }
 
     .listaservicios{
