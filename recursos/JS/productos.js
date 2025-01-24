@@ -57,7 +57,7 @@ function renderProductos(info) {
         listaProductos.appendChild(item);
     });
 
-  //  actualizarVisibilidadProductos()
+   actualizarVisibilidadProductos()
     const botonVerMas = document.getElementById('vermas');
     botonVerMas.addEventListener("click", function () {
         let ocultos = document.querySelectorAll(".listaproductos .producto.oculto");
@@ -87,14 +87,19 @@ function actualizarVisibilidadProductos() {
     let productos = document.querySelectorAll(".listaproductos .producto");
     let sinResultados = document.getElementById("sinResultados");
     let hayResultados = false;
-    
+    let a = 0;
     productos.forEach(producto => {
         let titulo = producto.querySelector(".minititulo").textContent.toLowerCase();
         let marca = producto.getAttribute("data-marca").toLowerCase();
-
-        if ((titulo.includes(filtro) || marca.includes(filtro)) && (marcaSeleccionada === "" || marca === marcaSeleccionada)) {
-            producto.style.display = "grid";
-            producto.classList.remove("oculto");
+        if ((titulo.includes(filtro) || marca.includes(filtro)) && (marcaSeleccionada === "" || marca === marcaSeleccionada) ) {
+            a++
+            if(a <= 4){
+                producto.style.display = "grid";
+                producto.classList.remove("oculto");
+            }else{
+                producto.style.display = "none";
+            producto.classList.add("oculto");
+            }
             hayResultados = true;
         } else {
             producto.style.display = "none";
@@ -118,7 +123,7 @@ function actualizarBotonVerMas() {
     const productosOcultos = document.querySelectorAll(".listaproductos .producto.oculto");
     const productosVisibles = document.querySelectorAll(".listaproductos .producto[style*='display: grid']");
     
-    if (productosOcultos.length === 0 || productosVisibles.length === 0) {
+    if (productosOcultos.length === 0 || productosVisibles.length === 0 || productosVisibles.length < 4) {
         botonVerMas.style.display = "none";
     } else {
         botonVerMas.style.display = "block";
