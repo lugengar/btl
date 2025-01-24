@@ -57,7 +57,7 @@ function renderProductos(info) {
         listaProductos.appendChild(item);
     });
 
-    actualizarVisibilidadProductos()
+  //  actualizarVisibilidadProductos()
     const botonVerMas = document.getElementById('vermas');
     botonVerMas.addEventListener("click", function () {
         let ocultos = document.querySelectorAll(".listaproductos .producto.oculto");
@@ -128,3 +128,8 @@ function actualizarBotonVerMas() {
 document.getElementById("botbuscar").addEventListener("click", actualizarVisibilidadProductos);
 document.getElementById("volver").addEventListener("click", eliminarfiltros);
 
+document.getElementById("buscar").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") { 
+        actualizarVisibilidadProductos();
+    }
+});

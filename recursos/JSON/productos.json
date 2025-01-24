@@ -35,6 +35,34 @@
             "posicionimagen": "top",
             "titulo": "COTIZACIÓN DE PC PERSONALIZADA",
                 "texto": "Realizamos cotizaciones de equipos a medida para tu empresa, equipos armados con sistema operativo instalado y preconfigurado para una incorporación inmediata a su estación de trabajo."
+        },
+        {
+            "imagen": "mikrotikhex.webp",
+            "marca": "MIKROTIK",
+            "posicionimagen": "center",
+            "titulo": "Mikrotik hex",
+                "texto": "Equipo compacto con 4 entradas POE ideal para dar alimentación y conexión a los AP o cámaras de una forma simple."
+        },
+        {
+            "imagen": "switcharuba24.webp",
+            "marca": "ARUBA",
+            "posicionimagen": "center",
+            "titulo": "Switch Aruba x24",
+                "texto": "Switch administrable Aruba con 24 puertos de los cuales 4 son POE. Ideal para infraestructuras con múltiples equipos conectados por cable y múltiples AP."
+        },
+        {
+            "imagen": "switcharuba8.webp",
+            "marca": "ARUBA",
+            "posicionimagen": "center",
+            "titulo": "Switch Aruba x8",
+                "texto": "Switch administrable Aruba con 8 puertos puertos de los cuales 4 son POE. Ideal para infraestructuras con pocos equipos conectados por cable y múltiples AP"
+        },
+        {
+            "imagen": "notebookasuszenbook.webp",
+            "marca": "ASUS",
+            "posicionimagen": "center",
+            "titulo": "Notebook Asus Zenbook",
+                "texto": "Notebook ultra delgada y portable perfecta para trabajos de ofimática con potencia extra para soportar tareas más complejas como gestión de base de datos o presentaciones multimedia."
         }
     ]
 }
