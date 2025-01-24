@@ -650,7 +650,6 @@ backdrop-filter: blur(2vh);
     ". MIN  ." max-content
     ". TIT  ." max-content
     ". FORM  . " max-content
-
     ". BOT  . " auto 
     ". . .  " auto /
     auto 80vh auto ;
@@ -675,13 +674,7 @@ backdrop-filter: blur(2vh);
     width: 100%;
     height: 30vh;
 }  
-.g-recaptcha {
-    transform: scale(0.8); 
-    grid-area: CAPT;
-    max-width: 80vh;
-    max-height: 50vh;
-    overflow: hidden;
-}
+
 #marcas{
     overflow: hidden;
     max-height: 25vh;
