@@ -850,7 +850,7 @@ grid-area: REDE;
     background-color: red;
     position: absolute;
     opacity: 0;
-    animation: confettiFall linear infinite;
+    animation: confettiFall linear ;
 
 }
 @keyframes confettiFall {

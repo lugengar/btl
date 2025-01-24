@@ -36,6 +36,5 @@ function cleanUpConfetti() {
     const confettiContainer = document.querySelector('.confetti-container');
     if (confettiContainer) {
         confettiContainer.remove();
-        click = false;
     }
 }
