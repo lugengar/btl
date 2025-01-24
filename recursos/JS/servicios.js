@@ -18,7 +18,7 @@ fetch('recursos/JSON/servicios.json')
             const h1Titulo = document.createElement('h1');
             h1Titulo.classList.add('subtitulo');
             h1Titulo.textContent = servicio.titulo;
-            divServicio.innerHTML= `<button class="botonegro" onclick="consultar('servicio','${servicio.titulo}')">CONSULTAR COTIZACIÓN</button>`
+            divServicio.innerHTML= `<button class="botonegro" onclick="consultar('COTIZACIÓN SERVICIOS','${servicio.titulo}')">CONSULTAR COTIZACIÓN</button>`
             const pTexto = document.createElement('p');
             pTexto.classList.add('texto');
             pTexto.textContent = servicio.texto;
