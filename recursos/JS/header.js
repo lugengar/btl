@@ -47,9 +47,9 @@ function redirigir(href){
 function consultar(consulta,producto){
     var asunto = document.getElementById('asunto');
     var mensaje = document.getElementById('mensaje');
-    if(consulta=="producto"){
+    if(consulta=="COTIZACIÓN PRODUCTOS"){
         mensaje.textContent = "Hola, quisiera saber la cotización del "+consulta+' '+producto+". Gracias."
-    }else  if(consulta=="servicio"){
+    }else  if(consulta=="COTIZACIÓN SERVICIOS"){
         mensaje.textContent = "Hola, quisiera saber la cotización del "+producto+". Gracias."
     }
     asunto.value = consulta
