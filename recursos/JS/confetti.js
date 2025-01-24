@@ -3,7 +3,7 @@
 const urlParams = new URLSearchParams(window.location.search);
 if (urlParams.has('enviado') && urlParams.get('enviado') === 'true') {
     createConfetti();
-    setTimeout(cleanUpConfetti, 4000);
+    setTimeout(cleanUpConfetti, 5000);
 }
 
 
