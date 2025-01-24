@@ -832,6 +832,7 @@ grid-area: REDE;
 .producto,.cuadro, .servicio, .titulo, .inputs, #producto h1, #producto p, .botonegro, .minitexto, #servicios .titulo {
     opacity: 0;
 }
+
 .confetti-container {
     position: fixed;
     top: 0;
