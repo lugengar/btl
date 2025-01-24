@@ -116,9 +116,14 @@
                     <option value="otros">OTROS</option>
                 </select>
                 <textarea name="mensaje" id="mensaje" placeholder="MENSAJE"></textarea>
-                <div class="g-recaptcha" data-sitekey="TU_CLAVE_DE_SITIO" data-theme="dark" ></div>
+                <div class="g-recaptcha" data-sitekey="6LeXasEqAAAAAIW-6fg6QF3FcsHJvbLet-Y3F5gO" data-theme="dark" ></div>
             </div>
-            <button class="botonegro" type="submit">ENVIAR CONSULTA</button>
+            <button class="botonegro g-recaptcha"
+      data-sitekey="6LdeiMEqAAAAANjv2g6YBfOvSahCEdtzIRyE7fu6"
+      data-callback='onSubmit'
+      data-action='submit'>
+      ENVIAR CONSULTA
+  </button>
         </form>
         <section id="marcadeagua">© 2025 BEYOND THE LIMIT. DESARROLLADO POR &nbsp;<a href="https://lugengar.github.io/Porfolio/">LUCIANO BARBINI</a></section>
         <footer id="footer" class="fondonegro"  style="background-image: url(recursos/SVG/fondo3.svg);" >
@@ -139,6 +144,7 @@
     </main>
 </body>
 </html>
+<script src="https://www.google.com/recaptcha/enterprise.js?render=6LdeiMEqAAAAANjv2g6YBfOvSahCEdtzIRyE7fu6"></script>
 <script src="recursos/JS/carrusel.js"></script>
 <script src="recursos/JS/video.js"></script>
 <script src="recursos/JS/header.js"></script>
@@ -148,4 +154,8 @@
 <script src="recursos/JS/contacto.js"></script>
 <script src="recursos/JS/scroll.js"></script>
 <script src="recursos/JS/redes.js"></script>
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script>
+function onSubmit(token) {
+    document.getElementById("contacto").submit();
+}
+</script>
