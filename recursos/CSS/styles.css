@@ -352,6 +352,8 @@ background-image: url();
     grid-area: CAR;
 }
 .whats{
+    transition: transform 0.1s ease-in-out;
+
     box-shadow: 1vh 1vh 2vh rgba(0, 0, 0, 0.397);
     width: 10vh;
     height: 10vh;
@@ -361,9 +363,13 @@ background-image: url();
     background-size: 6vh;
     background-repeat: no-repeat;
     position: fixed;
-    right: 4vh;
-    bottom: 4vh;
+    right: 2vh;
+    bottom: 2vh;
     z-index: 100;
+}
+.whats:hover{
+    transform: scale(1.1);
+    
 }
 .fondonegro{
     position: relative;
