@@ -132,6 +132,11 @@ function actualizarBotonVerMas() {
 
 document.getElementById("botbuscar").addEventListener("click", actualizarVisibilidadProductos);
 document.getElementById("volver").addEventListener("click", eliminarfiltros);
+document.getElementById("marcasbuscar").addEventListener("input", function() {
+    if (this.value === "") {
+        actualizarVisibilidadProductos();
+    }
+});
 document.getElementById("buscar").addEventListener("input", function() {
     if (this.value === "") {
         actualizarVisibilidadProductos();
