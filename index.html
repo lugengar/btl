@@ -101,15 +101,15 @@
         <section id="video">
             <iframe width="100%" height="100%" src="" id="iframe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
-        <form id="contacto"  style="background-image: url(recursos/SVG/contacto.jpg);" action="https://btl-solutions.com.ar/correo.php" method="POST">
+        <form id="contacto"  style="background-image: url(recursos/SVG/contacto.jpg);" action="https://wa.me/541123946762" method="get" target="_blank" onsubmit="enviarWhatsApp()">
             <div class="minitexto">CONTACTO</div>
             <div class="filtro"></div>
 
             <h1 class="titulo">FORMULARIO DE CONTACTO</h1>
             <div class="inputs">
-                <input type="search" name="nombre" id="" required placeholder="NOMBRE">
-                <input type="search" name="empresa" id="" required placeholder="EMPRESA">
-                <input type="email" name="correo" id="" required placeholder="CORREO"> 
+                <input type="search" name="nombre" id="nombre" required placeholder="NOMBRE">
+                <input type="search" name="empresa" id="empresa" required placeholder="EMPRESA">
+                <input type="email" name="correo" id="correo" required placeholder="CORREO"> 
                 <select name="asunto" id="asunto" required >
                     <option value="">ASUNTO</option>
                     <option value="COTIZACIÓN PRODUCTOS">COTIZACIÓN PRODUCTOS</option>
@@ -118,11 +118,7 @@
                 </select>
                 <textarea name="mensaje" id="mensaje" placeholder="MENSAJE"></textarea>
             </div>
-            <button class="botonegro g-recaptcha"
-            data-sitekey="6LfSmcIqAAAAAO-6gAVJWlC3hmUgbHlZnaE3-6jz"
-                data-callback='onSubmit'
-                data-action='submit'>
-                ENVIAR CONSULTA
+            <button class="botonegro" type="submit"> ENVIAR CONSULTA
             </button>
         </form>
         <section id="marcadeagua">© 2025 BEYOND THE LIMIT. DESARROLLADO POR &nbsp;<a href="https://lugengar.github.io/Porfolio/">LUCIANO BARBINI</a></section>
@@ -154,8 +150,30 @@
 <script src="recursos/JS/contacto.js"></script>
 <script src="recursos/JS/scroll.js"></script>
 <script src="recursos/JS/redes.js"></script>
+
 <script>
-function onSubmit(token) {
-    document.getElementById("contacto").submit();
+function enviarWhatsApp() {
+    let form = document.getElementById("contacto");
+
+    if (!form.checkValidity()) {
+        alert("Por favor, completa todos los campos obligatorios.");
+        return false;
+    }
+
+    let nombre = document.getElementById("nombre").value;
+    let empresa = document.getElementById("empresa").value;
+    let correo = document.getElementById("correo").value;
+    let asunto = document.getElementById("asunto").value;
+    let mensaje = document.getElementById("mensaje").value;
+
+    let texto = `Nombre: ${nombre}%0A` +
+                `Empresa: ${empresa}%0A` +
+                `Correo: ${correo}%0A` +
+                `Asunto: ${asunto}%0A%0A` +
+                `Mensaje: ${mensaje}`;
+
+    let url = `https://wa.me/541123946762?text=${texto}`;
+    
+    window.open(url, '_blank');
 }
 </script>
